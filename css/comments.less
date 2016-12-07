@@ -1,0 +1,84 @@
+@import (reference) "helpers.less";
+
+/* comments block styles */
+.comments_block {
+    padding-top: 35px;
+    .caption {
+        margin-bottom: 12px;
+        padding-bottom: 6px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: @green_color;
+        border-bottom: 1px solid #BBBBBB;
+        .counter {
+            font-weight: normal;
+        }
+    }
+    .comment {
+        .comment {
+            padding-left: 55px;
+        }
+    }
+    .avatar {
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-right: 12px;
+        img {
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .body {
+        padding-left: 112px;
+    }
+    .username {
+        font-weight: bold;
+        text-decoration: none;
+        color: @green_color;
+    }
+    .datetime {
+        display: block !important;
+        width: auto !important;
+        padding: 5px 0px 15px 20px;
+        background-position: 0px 5px !important;
+    }
+    .actions_row {
+        padding-top: 5px;
+        padding-bottom: 15px;
+        font-weight: bold;
+        text-align: right;
+        a {
+            margin: 0px 5px 0px 15px;
+            text-decoration: none;
+            color: @dark_color;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: @green_color;
+        }
+    }
+}
+
+.comment_form {
+    .caption {
+        .comments_block > .caption;
+        margin-bottom: 25px;
+    }
+    .textareas {
+        width: 974px;
+        height: 146px;
+        margin-bottom: 25px;
+        padding: 15px 10px;
+        border: 2px solid #EEEEEE;
+    }
+    .textareas:focus {
+        border-color: #64B352;
+    }
+    .buttons {
+        width: 103px;
+        margin: 0px auto;
+    }
+}

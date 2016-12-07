@@ -1,0 +1,256 @@
+@import (reference) "base.less";
+@import (reference) "carousel.less";
+
+.page_title {
+    padding-right: 332px !important;
+    .notice {
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        font-weight: normal;
+        opacity: 0.75;
+    }
+}
+
+/* game styles */
+.game_block {
+    margin: -15px -16px -30px -16px;
+    .game_main {
+        padding: 20px 16px;
+        background: #EEEEEE none;
+        .first_team {
+            text-align: right;
+        }
+        .second_team {
+            text-align: left;
+        }
+        .game_info {
+            width: auto;
+            margin: 0px auto;
+            td {
+                vertical-align: middle;
+                border: none;
+            }
+            .team_name {
+                width: 330px;
+                .font(30px, 1.2em);
+                font-weight: bold;
+                text-transform: uppercase;
+                a {
+                    text-decoration: none;
+                    color: @dark_color;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    color: @green_color;
+                }
+            }
+            .team_logo {
+                padding: 0px 20px;
+                a, img {
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .goals {
+                padding-top: 9px;
+                vertical-align: top;
+                color: @grey_color;
+                span {
+                    white-space: nowrap;
+                }
+            }
+            .game_score {
+                padding: 0px 12px;
+                .font(40px, 1.2em);
+                font-weight: bold;
+                text-align: center;
+                white-space: nowrap;
+            }
+            .central_text {
+                text-align: center;
+                vertical-align: top;
+            }
+        }
+        .game_results {
+            width: auto;
+            margin: 19px auto 0px auto;
+            tr:first-child {
+                td {
+                    height: 19px;
+                    padding: 0px;
+                    border-top: 1px solid #BBBBBB;
+                }
+            }
+            td {
+                padding: 3px 0px;
+                .font(15px, 1.2em);
+                vertical-align: middle;
+            }
+            .label {
+                padding: 0px 15px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .value {
+                min-width: 103px;
+                color: @grey_color;
+            }
+        }
+        .socials {
+            padding-top: 16px;
+            text-align: center;
+            a {
+                display: inline-block;
+                width: 59px;
+                height: 28px;
+                margin: 0px 5px;
+                background-image: url(../img/social_buttons.png);
+                background-repeat: no-repeat;
+            }
+            .fb_like {
+                background-position: -370px 0px;
+            }
+            .google_like {
+                background-position: -429px 0px;
+            }
+        }
+    }
+    .game_tables {  
+        padding: 21px 16px 0px 16px;
+        .main_column {
+            float: left;
+            width: 665px;
+            .team_tables {
+                padding-bottom: 10px;
+            }
+            .caption {
+                margin-top: 8px;
+                padding-bottom: 3px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: @green_color;
+                border-bottom: 1px solid #BBBBBB;
+            }
+            .subcaption {
+                padding-top: 11px;
+                margin-bottom: 17px;
+                font-weight: bold;
+            }
+            .team_table {
+                width: 100%;
+                margin-bottom: 25px;
+                td {
+                    padding: 2px 3px 2px 0px;
+                    .font(12px, 1.2em);
+                    text-align: left;
+                    vertical-align: top;
+                }
+                .caption_row td {
+                    padding: 2px 3px 2px 0px;
+                    font-weight: bold;
+                    background: #EEEEEE none;
+                }
+                .dark_row {
+                    background: #EEEEEE none;
+                }
+                .pos_col {
+                    width: 33px;
+                }
+                .no_col {
+                    width: 34px;
+                }
+                .name_col {
+                    img {
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        margin-bottom: -4px;
+                        margin-left: 3px;
+                    }
+                }
+                .sh_col,
+                .sg_col,
+                .g_col,
+                .a_col,
+                .of_col,
+                .fd_col,
+                .fc_col,
+                .sv_col,
+                .yc_col,
+                .rc_col {
+                    width: 32px;
+                }
+            }
+            .comments {
+                padding-bottom: 30px;
+            }
+        }
+        .game_narrow {
+            float: right;
+            width: 308px;
+            .scorring_block {
+                margin-bottom: 20px;
+                .caption {
+                    height: 23px;
+                    padding-top: 7px;
+                    .font(15px, 1.2em);
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #ffffff;
+                    background: #64B352 none;
+                }
+                .scoring_table {
+                    width: 100%;
+                    td {
+                        padding: 7px 15px;
+                        .font(12px, 1.5em);
+                        vertical-align: top;
+                    }
+                    .caption_row td {
+                        width: 50%;
+                        padding: 7px;
+                        .font(18px, 1.2em);
+                        text-align: center;
+                        vertical-align: middle;
+                        background: #EEEEEE none;
+                    }
+                }
+            }
+            .match_block {
+                .caption {
+                    .scorring_block > .caption;
+                }
+                .match_table {
+                    .scorring_block > .scoring_table;
+                    td {
+                        padding: 0px 15px;
+                    }
+                    tr:nth-child(2) td {
+                        padding-top: 10px;
+                    }
+                    .caption_row table,
+                    .caption_row > td {
+                        width: 100%;
+                    }
+                    .caption_row table td {
+                        width: 50%;
+                        padding: 0px
+                    }
+                    .label {
+                        white-space: nowrap;
+                        text-align: center;
+                    }
+                    .first_team {
+                        text-align: left;
+                    }
+                    .second_team {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

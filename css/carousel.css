@@ -1,0 +1,150 @@
+/* Blog/Forums tile carousel styles */
+.carousel_block {
+  width: 933px;
+  height: 100px;
+  margin: 0px auto 0px auto;
+}
+.carousel_block .jcarousel-skin-tango {
+  width: 933px;
+  height: 100px;
+  margin: 0px auto;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-direction-rtl {
+  direction: rtl;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-container-horizontal {
+  width: 933px;
+  height: 100px;
+  padding: 0px;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-clip {
+  overflow: hidden;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-clip-horizontal {
+  width: 933px;
+  height: 100px;
+  margin: 0px;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-item {
+  width: 311px;
+  height: 100px;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-item-horizontal {
+  margin: 0px;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-prev-horizontal,
+.carousel_block .jcarousel-skin-tango .jcarousel-next-horizontal {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: 48px;
+  height: 100px;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-prev-horizontal {
+  left: -48px;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-next-horizontal {
+  right: -48px;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-prev-horizontal:before,
+.carousel_block .jcarousel-skin-tango .jcarousel-next-horizontal:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 100px;
+  margin: 0px auto;
+  background-image: url(../img/carousel_nav.png);
+  background-repeat: no-repeat;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-prev-horizontal:before {
+  background-position: 0px 50%;
+}
+.carousel_block .jcarousel-skin-tango .jcarousel-next-horizontal:before {
+  background-position: -14px 50%;
+}
+/* Partners tile carousel styles */
+.partners_block {
+  width: 933px;
+  height: 100px;
+  margin: 0px auto 0px auto;
+  height: 126px;
+}
+.partners_block .jcarousel-skin-tango {
+  width: 933px;
+  height: 100px;
+  margin: 0px auto;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-direction-rtl {
+  direction: rtl;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-container-horizontal {
+  width: 933px;
+  height: 100px;
+  padding: 0px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-clip {
+  overflow: hidden;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-clip-horizontal {
+  width: 933px;
+  height: 100px;
+  margin: 0px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-item {
+  width: 311px;
+  height: 100px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-item-horizontal {
+  margin: 0px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-prev-horizontal,
+.partners_block .jcarousel-skin-tango .jcarousel-next-horizontal {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: 48px;
+  height: 100px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-prev-horizontal {
+  left: -48px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-next-horizontal {
+  right: -48px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-prev-horizontal:before,
+.partners_block .jcarousel-skin-tango .jcarousel-next-horizontal:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 100px;
+  margin: 0px auto;
+  background-image: url(../img/carousel_nav.png);
+  background-repeat: no-repeat;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-prev-horizontal:before {
+  background-position: 0px 50%;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-next-horizontal:before {
+  background-position: -14px 50%;
+}
+.partners_block .jcarousel-skin-tango {
+  height: 126px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-container-horizontal {
+  height: 126px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-clip-horizontal {
+  height: 126px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-item {
+  width: 933px;
+  height: 126px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-prev-horizontal,
+.partners_block .jcarousel-skin-tango .jcarousel-next-horizontal {
+  height: 126px;
+}
+.partners_block .jcarousel-skin-tango .jcarousel-prev-horizontal:before,
+.partners_block .jcarousel-skin-tango .jcarousel-next-horizontal:before {
+  height: 126px;
+}

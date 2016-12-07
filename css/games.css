@@ -1,0 +1,276 @@
+.page_title {
+  padding-right: 332px !important;
+}
+.page_title .notice {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  font-weight: normal;
+  opacity: 0.75;
+}
+/* game styles */
+.game_block {
+  margin: -15px -16px -30px -16px;
+}
+.game_block .game_main {
+  padding: 20px 16px;
+  background: #EEEEEE none;
+}
+.game_block .game_main .first_team {
+  text-align: right;
+}
+.game_block .game_main .second_team {
+  text-align: left;
+}
+.game_block .game_main .game_info {
+  width: auto;
+  margin: 0px auto;
+}
+.game_block .game_main .game_info td {
+  vertical-align: middle;
+  border: none;
+}
+.game_block .game_main .game_info .team_name {
+  width: 330px;
+  font-size: 30px;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.game_block .game_main .game_info .team_name a {
+  text-decoration: none;
+  color: #555555;
+}
+.game_block .game_main .game_info .team_name a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.game_block .game_main .game_info .team_logo {
+  padding: 0px 20px;
+}
+.game_block .game_main .game_info .team_logo a,
+.game_block .game_main .game_info .team_logo img {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.game_block .game_main .game_info .goals {
+  padding-top: 9px;
+  vertical-align: top;
+  color: #777777;
+}
+.game_block .game_main .game_info .goals span {
+  white-space: nowrap;
+}
+.game_block .game_main .game_info .game_score {
+  padding: 0px 12px;
+  font-size: 40px;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+.game_block .game_main .game_info .central_text {
+  text-align: center;
+  vertical-align: top;
+}
+.game_block .game_main .game_results {
+  width: auto;
+  margin: 19px auto 0px auto;
+}
+.game_block .game_main .game_results tr:first-child td {
+  height: 19px;
+  padding: 0px;
+  border-top: 1px solid #BBBBBB;
+}
+.game_block .game_main .game_results td {
+  padding: 3px 0px;
+  font-size: 15px;
+  line-height: 1.2em;
+  vertical-align: middle;
+}
+.game_block .game_main .game_results .label {
+  padding: 0px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.game_block .game_main .game_results .value {
+  min-width: 103px;
+  color: #777777;
+}
+.game_block .game_main .socials {
+  padding-top: 16px;
+  text-align: center;
+}
+.game_block .game_main .socials a {
+  display: inline-block;
+  width: 59px;
+  height: 28px;
+  margin: 0px 5px;
+  background-image: url(../img/social_buttons.png);
+  background-repeat: no-repeat;
+}
+.game_block .game_main .socials .fb_like {
+  background-position: -370px 0px;
+}
+.game_block .game_main .socials .google_like {
+  background-position: -429px 0px;
+}
+.game_block .game_tables {
+  padding: 21px 16px 0px 16px;
+}
+.game_block .game_tables .main_column {
+  float: left;
+  width: 665px;
+}
+.game_block .game_tables .main_column .team_tables {
+  padding-bottom: 10px;
+}
+.game_block .game_tables .main_column .caption {
+  margin-top: 8px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #64b352;
+  border-bottom: 1px solid #BBBBBB;
+}
+.game_block .game_tables .main_column .subcaption {
+  padding-top: 11px;
+  margin-bottom: 17px;
+  font-weight: bold;
+}
+.game_block .game_tables .main_column .team_table {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.game_block .game_tables .main_column .team_table td {
+  padding: 2px 3px 2px 0px;
+  font-size: 12px;
+  line-height: 1.2em;
+  text-align: left;
+  vertical-align: top;
+}
+.game_block .game_tables .main_column .team_table .caption_row td {
+  padding: 2px 3px 2px 0px;
+  font-weight: bold;
+  background: #EEEEEE none;
+}
+.game_block .game_tables .main_column .team_table .dark_row {
+  background: #EEEEEE none;
+}
+.game_block .game_tables .main_column .team_table .pos_col {
+  width: 33px;
+}
+.game_block .game_tables .main_column .team_table .no_col {
+  width: 34px;
+}
+.game_block .game_tables .main_column .team_table .name_col img {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-bottom: -4px;
+  margin-left: 3px;
+}
+.game_block .game_tables .main_column .team_table .sh_col,
+.game_block .game_tables .main_column .team_table .sg_col,
+.game_block .game_tables .main_column .team_table .g_col,
+.game_block .game_tables .main_column .team_table .a_col,
+.game_block .game_tables .main_column .team_table .of_col,
+.game_block .game_tables .main_column .team_table .fd_col,
+.game_block .game_tables .main_column .team_table .fc_col,
+.game_block .game_tables .main_column .team_table .sv_col,
+.game_block .game_tables .main_column .team_table .yc_col,
+.game_block .game_tables .main_column .team_table .rc_col {
+  width: 32px;
+}
+.game_block .game_tables .main_column .comments {
+  padding-bottom: 30px;
+}
+.game_block .game_tables .game_narrow {
+  float: right;
+  width: 308px;
+}
+.game_block .game_tables .game_narrow .scorring_block {
+  margin-bottom: 20px;
+}
+.game_block .game_tables .game_narrow .scorring_block .caption {
+  height: 23px;
+  padding-top: 7px;
+  font-size: 15px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: #64B352 none;
+}
+.game_block .game_tables .game_narrow .scorring_block .scoring_table {
+  width: 100%;
+}
+.game_block .game_tables .game_narrow .scorring_block .scoring_table td {
+  padding: 7px 15px;
+  font-size: 12px;
+  line-height: 1.5em;
+  vertical-align: top;
+}
+.game_block .game_tables .game_narrow .scorring_block .scoring_table .caption_row td {
+  width: 50%;
+  padding: 7px;
+  font-size: 18px;
+  line-height: 1.2em;
+  text-align: center;
+  vertical-align: middle;
+  background: #EEEEEE none;
+}
+.game_block .game_tables .game_narrow .match_block .caption {
+  height: 23px;
+  padding-top: 7px;
+  font-size: 15px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: #64B352 none;
+}
+.game_block .game_tables .game_narrow .match_block .match_table {
+  width: 100%;
+}
+.game_block .game_tables .game_narrow .match_block .match_table td {
+  padding: 7px 15px;
+  font-size: 12px;
+  line-height: 1.5em;
+  vertical-align: top;
+}
+.game_block .game_tables .game_narrow .match_block .match_table .caption_row td {
+  width: 50%;
+  padding: 7px;
+  font-size: 18px;
+  line-height: 1.2em;
+  text-align: center;
+  vertical-align: middle;
+  background: #EEEEEE none;
+}
+.game_block .game_tables .game_narrow .match_block .match_table td {
+  padding: 0px 15px;
+}
+.game_block .game_tables .game_narrow .match_block .match_table tr:nth-child(2) td {
+  padding-top: 10px;
+}
+.game_block .game_tables .game_narrow .match_block .match_table .caption_row table,
+.game_block .game_tables .game_narrow .match_block .match_table .caption_row > td {
+  width: 100%;
+}
+.game_block .game_tables .game_narrow .match_block .match_table .caption_row table td {
+  width: 50%;
+  padding: 0px;
+}
+.game_block .game_tables .game_narrow .match_block .match_table .label {
+  white-space: nowrap;
+  text-align: center;
+}
+.game_block .game_tables .game_narrow .match_block .match_table .first_team {
+  text-align: left;
+}
+.game_block .game_tables .game_narrow .match_block .match_table .second_team {
+  text-align: right;
+}

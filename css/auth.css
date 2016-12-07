@@ -1,0 +1,75 @@
+/* login block styles */
+.not_logined .inputs {
+  width: 146px;
+  height: 26px;
+  margin-bottom: 15px;
+  border: 2px solid #EEEEEE;
+}
+.not_logined .inputs:focus {
+  border-color: #64B352;
+}
+.not_logined .remember_me {
+  display: block;
+  position: relative;
+  min-height: 20px;
+  margin-bottom: 15px;
+  padding-left: 32px;
+  text-align: left;
+}
+.not_logined .buttons {
+  width: 102px;
+  margin: 0px auto 15px auto;
+}
+.not_logined .registration_link {
+  padding-top: 15px;
+  text-align: center;
+  border-top: 1px solid #BBBBBB;
+}
+.not_logined .registration_link .caption {
+  font-weight: bold;
+  color: #777777;
+}
+.not_logined .registration_link .buttons {
+  margin-bottom: 7px;
+  background: #FF8000 none;
+}
+/* registration popup styles */
+.registration {
+  width: 534px;
+  min-height: 382px;
+}
+.registration .popup_form_block {
+  padding: 22px;
+}
+.registration .main_fields {
+  float: left;
+  width: 231px;
+}
+.registration .additional_fields {
+  float: right;
+  width: 231px;
+}
+.registration .inputs {
+  display: block;
+  width: 207px;
+  height: 26px;
+  margin-bottom: 15px;
+  border: 2px solid #EEEEEE;
+}
+.registration .inputs:focus {
+  border-color: #64B352;
+}
+.registration .captcha_image {
+  width: 231px;
+  height: 75px;
+  padding-bottom: 15px;
+}
+.registration .captcha_image img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.registration .buttons {
+  width: 102px;
+  margin: 0px auto;
+}

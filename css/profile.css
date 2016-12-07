@@ -1,0 +1,797 @@
+.page_title {
+  padding-right: 120px !important;
+}
+.page_title .edit_profile_link {
+  position: absolute;
+  top: 6px;
+  right: 18px;
+  font-weight: normal;
+  opacity: 0.75;
+}
+/* profile styles */
+.profile {
+  margin: -15px -16px -30px -16px;
+}
+.profile .profile_main {
+  padding: 15px 16px;
+  background: #EEEEEE none;
+}
+.profile .profile_avatar {
+  display: block;
+  float: left;
+  width: 238px;
+  height: 238px;
+  margin-right: 27px;
+}
+.profile .profile_avatar img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.profile .profile_info {
+  float: left;
+  min-width: 376px;
+  max-width: 460px;
+}
+.profile .profile_info .name {
+  display: block;
+  margin-bottom: 20px;
+}
+.profile .profile_info .name .status {
+  padding-left: 10px;
+  font-weight: normal;
+  color: #777777;
+}
+.profile .profile_info .info_table {
+  display: table;
+}
+.profile .profile_info .info_table .info_row {
+  display: table-row;
+}
+.profile .profile_info .info_table .info_cell {
+  display: table-cell;
+  padding: 4px 0px;
+  text-align: left;
+  vertical-align: top;
+}
+.profile .profile_info .info_table .label {
+  padding-right: 21px;
+  color: grey_color;
+}
+.profile .profile_info .info_table .value {
+  font-weight: bold;
+}
+.profile .profile_info .info_separator {
+  height: 0px;
+  margin: 12px 0px;
+  border-top: 1px solid #BBBBBB;
+}
+.profile .profile_actions {
+  float: right;
+  width: 246px;
+}
+.profile .profile_actions a {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 23px;
+  margin-bottom: 13px;
+  padding: 7px 0px 0px 46px;
+  padding-top: 7px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #64B352 none;
+}
+.profile .profile_actions a:hover {
+  text-decoration: none;
+  background: #86C479 none;
+}
+.profile .profile_actions a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/icons.png);
+  background-repeat: no-repeat;
+}
+.profile .profile_actions .to_friends:before {
+  left: 10px;
+  top: 6px;
+  width: 25px;
+  height: 18px;
+  background-position: -82px 0px;
+}
+.profile .profile_actions .from_friends:before {
+  left: 9px;
+  top: 6px;
+  width: 26px;
+  height: 18px;
+  background-position: -83px -19px;
+}
+.profile .profile_actions .send_message:before {
+  left: 13px;
+  top: 7px;
+  width: 23px;
+  height: 16px;
+  background-position: -109px 0px;
+}
+.profile .profile_actions .start_chat:before {
+  left: 12px;
+  top: 6px;
+  width: 24px;
+  height: 21px;
+  background-position: -109px -17px;
+}
+.profile .profile_actions .make_favorite:before,
+.profile .profile_actions .featured_blog:before {
+  left: 13px;
+  top: 3px;
+  width: 22px;
+  height: 22px;
+  background-position: -110px -39px;
+}
+.profile .profile_activity {
+  padding: 21px 16px 0px 16px;
+}
+.profile .profile_activity .block_caption {
+  padding-bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #64b352;
+  border-bottom: 1px solid #BBBBBB;
+}
+.profile .profile_activity .block_caption .show_all {
+  font-weight: normal;
+  text-transform: none;
+  color: #777777;
+}
+.profile .profile_activity .block_caption .show_all a {
+  text-decoration: none;
+  color: #777777;
+}
+.profile .profile_activity .block_caption .show_all a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.profile .profile_narrow {
+  float: right;
+  width: 238px;
+  margin-left: 27px;
+}
+.profile .profile_friends {
+  margin-bottom: 16px;
+}
+.profile .profile_friends .friends {
+  width: 252px;
+  margin: 0px -7px;
+}
+.profile .profile_friends .friend {
+  display: block;
+  float: left;
+  width: 70px;
+  margin: 14px 7px;
+  text-decoration: none;
+  text-align: center;
+}
+.profile .profile_friends .friend .avatar {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+}
+.profile .profile_friends .friend .name {
+  text-decoration: none;
+  color: #777777;
+}
+.profile .profile_friends .friend:hover .name {
+  text-decoration: underline;
+  color: #64b352;
+}
+.profile .profile_photos .photos {
+  padding-top: 14px;
+}
+.profile .profile_photos .album {
+  display: block;
+  position: relative;
+  width: 234px;
+  height: 151px;
+  margin: 0px 0px 22px 0px;
+  padding: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #FFFFFF;
+}
+.profile .profile_photos .album .thumb {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.profile .profile_photos .album .bottom_gradient {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  bottom: 1px;
+  left: 1px;
+  width: 234px;
+  height: 76px;
+  background: url(../img/profile_photos_gradient.png) 0px 0px repeat-x;
+}
+.profile .profile_photos .album .bottom_gradient .inner_block {
+  overflow: hidden;
+  display: table-cell;
+  width: 204px;
+  height: 50px;
+  padding: 13px 15px;
+  text-align: left;
+  vertical-align: bottom;
+}
+.profile .profile_photos .album:hover {
+  border-color: #92C686;
+}
+.profile .profile_average {
+  float: left;
+  width: 729px;
+}
+.profile .profile_blog .articles {
+  padding-top: 12px;
+}
+.profile .profile_blog .article {
+  margin-bottom: 30px;
+}
+.profile .profile_blog .article .title {
+  font-weight: bold;
+  text-decoration: none;
+  color: #777777;
+}
+.profile .profile_blog .article .title:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.profile .profile_blog .article .datetime {
+  display: block;
+  padding-top: 2px;
+  padding-left: 20px;
+  color: #999999;
+  background: url(../img/date_icon.png) 0px 2px no-repeat;
+}
+.profile .profile_blog .article .body {
+  padding-top: 18px;
+}
+.profile .profile_blog .article .read_more {
+  font-weight: bold;
+  text-decoration: none;
+  color: #777777;
+}
+.profile .profile_blog .article .read_more:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+/* edit profile styles */
+.profile_form {
+  margin: 1px 0px 30px 0px;
+}
+.profile_form .avatar {
+  display: block;
+  float: left;
+  position: relative;
+  width: 168px;
+  height: 168px;
+  margin-right: 38px;
+}
+.profile_form .avatar img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.profile_form .avatar .upload_icon {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: inherit;
+  height: 30px;
+  text-align: center;
+  background: #DDDDDD none;
+}
+.profile_form .avatar .upload_icon:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  margin-top: 6px;
+  background: url(../img/icons.png) -86px -40px no-repeat;
+}
+.profile_form .form_column {
+  float: left;
+  width: 483px;
+}
+.profile_form .caption {
+  padding-bottom: 23px;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.profile_form .form_table {
+  display: table;
+  width: 100%;
+  margin-bottom: 21px;
+}
+.profile_form .form_table .row {
+  display: table-row;
+}
+.profile_form .form_table .label,
+.profile_form .form_table .field {
+  display: table-cell;
+  padding-bottom: 14px;
+  text-align: left;
+  vertical-align: middle;
+}
+.profile_form .form_table .label {
+  padding-right: 10px;
+}
+.profile_form .form_table .field {
+  width: 360px;
+}
+.profile_form .inputs {
+  width: 336px;
+  border: 2px solid #EEEEEE;
+}
+.profile_form .inputs:focus {
+  border-color: #64B352;
+}
+.profile_form .datepicker {
+  width: 304px;
+}
+.profile_form img.ui-datepicker-trigger {
+  display: block;
+  float: right;
+  margin-top: 1px;
+}
+.profile_form .radio_block {
+  display: inline-block;
+  position: relative;
+  min-height: 20px;
+  margin-bottom: -1px;
+  margin-right: 35px;
+  padding-left: 32px;
+  text-align: left;
+}
+.profile_form .buttons {
+  display: block;
+  width: 88px;
+  margin: 0px auto;
+}
+/* team profile styles */
+.team_profile {
+  padding-bottom: 30px;
+}
+.team_profile .team_block {
+  padding: 19px 23px;
+  background: #EEEEEE none;
+}
+.team_profile .team_block .team_logo {
+  display: block;
+  width: 238px;
+  float: left;
+  margin-right: 23px;
+}
+.team_profile .team_block .team_logo img {
+  display: block;
+  width: inherit;
+}
+.team_profile .team_block .team_info {
+  float: left;
+  min-width: 376px;
+  max-width: 460px;
+}
+.team_profile .team_block .team_name {
+  display: block;
+  margin-bottom: 20px;
+}
+.team_profile .team_block .team_name a {
+  text-decoration: none;
+  color: #555555;
+}
+.team_profile .team_block .team_name a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.team_profile .team_block .info_table {
+  display: table;
+}
+.team_profile .team_block .info_table .info_row {
+  display: table-row;
+}
+.team_profile .team_block .info_table .info_cell {
+  display: table-cell;
+  padding: 4px 0px;
+  text-align: left;
+  vertical-align: top;
+}
+.team_profile .team_block .info_table .label {
+  padding-right: 21px;
+  color: grey_color;
+}
+.team_profile .team_block .info_table .value {
+  font-weight: bold;
+}
+.team_profile .team_block .info_separator {
+  height: 0px;
+  margin: 12px 0px;
+  border-top: 1px solid #BBBBBB;
+}
+.team_profile .team_block .social_buttons {
+  float: right;
+  width: 246px;
+  padding-top: 10px;
+}
+.team_profile .team_block .social_buttons a {
+  display: inline-block;
+  width: 86px;
+  height: 41px;
+  margin-right: 10px;
+  background-image: url(../img/social_buttons.png);
+  background-repeat: no-repeat;
+}
+.team_profile .team_block .social_buttons .fb_like {
+  background-position: 0px 0px;
+}
+.team_profile .team_block .social_buttons .google_like {
+  background-position: -86px 0px;
+}
+.team_profile .list_column {
+  float: left;
+  width: 680px;
+  padding: 14px 0px 0px 16px;
+}
+.team_profile .list_column .caption {
+  width: 98%;
+  margin-bottom: 12px;
+  margin-top: 7px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #64b352;
+  border-bottom: 1px solid #BBBBBB;
+}
+.team_profile .articles_list {
+  margin: 0px -8px 0px -9px;
+  width: 688px;
+  margin-left: -8px;
+  margin-top: 27px;
+  margin-top: 0px;
+}
+.team_profile .articles_list .add_article {
+  float: left;
+  display: block;
+  width: 321px;
+  height: 58px;
+  margin: 0px 9px 25px 8px;
+  padding-top: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #555555;
+  background: #F0F0F0 none;
+}
+.team_profile .articles_list .add_article:before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: 0px 10px -4px 0px;
+  background: url(../img/icons.png) 0px 0px no-repeat;
+}
+.team_profile .articles_list .add_article:hover {
+  color: #64b352;
+  background: #E8F4E5 none;
+}
+.team_profile .articles_list .add_article:hover:before {
+  background-position: 0px -22px;
+}
+.team_profile .articles_list .article {
+  float: left;
+  width: 321px;
+  height: 100px;
+  margin: 0px 9px 25px 8px;
+}
+.team_profile .articles_list .article .thumb {
+  float: left;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 17px;
+}
+.team_profile .articles_list .article .thumb .image {
+  display: block;
+  position: relative;
+  z-index: 0;
+  width: inherit;
+  height: inherit;
+}
+.team_profile .articles_list .article .thumb .edit,
+.team_profile .articles_list .article .thumb .delete {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #555555;
+  background: #F0F0F0 none;
+}
+.team_profile .articles_list .article .thumb .edit:before,
+.team_profile .articles_list .article .thumb .delete:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icons.png);
+  background-repeat: no-repeat;
+}
+.team_profile .articles_list .article .thumb .edit {
+  top: 0px;
+  left: 0px;
+  height: 35px;
+  padding-top: 15px;
+}
+.team_profile .articles_list .article .thumb .edit:before {
+  width: 21px;
+  height: 20px;
+  margin: 0px 6px -3px 0px;
+  background-position: -20px 0px;
+}
+.team_profile .articles_list .article .thumb .edit:hover {
+  color: #ffffff;
+  background: #64B352 none;
+}
+.team_profile .articles_list .article .thumb .edit:hover:before {
+  background-position: -20px -22px;
+}
+.team_profile .articles_list .article .thumb .delete {
+  top: 50px;
+  left: 0px;
+  height: 36px;
+  padding-top: 14px;
+}
+.team_profile .articles_list .article .thumb .delete:before {
+  width: 17px;
+  height: 21px;
+  margin: 0px 6px -3px 0px;
+  background-position: -42px 0px;
+}
+.team_profile .articles_list .article .thumb .delete:hover {
+  color: #ffffff;
+  background: #F03D00 none;
+}
+.team_profile .articles_list .article .thumb .delete:hover:before {
+  background-position: -42px -22px;
+}
+.team_profile .articles_list .article .body {
+  position: relative;
+  float: left;
+  width: 204px;
+  height: 78px;
+  padding-bottom: 22px;
+}
+.team_profile .articles_list .article .body .title {
+  font-weight: bold;
+  text-decoration: none;
+  color: #555555;
+}
+.team_profile .articles_list .article .body .title:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.team_profile .articles_list .article .body .datetime {
+  position: absolute;
+  bottom: 3px;
+  left: 0px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #999999;
+  background: url(../img/date_icon.png) 0px 0px no-repeat;
+}
+.team_profile .articles_list .article:hover .edit,
+.team_profile .articles_list .article:hover .delete {
+  display: block;
+}
+.team_profile .articles_list .article {
+  width: 327px;
+}
+.team_profile .articles_list .article .body {
+  width: 210px;
+}
+.team_profile .right_column {
+  float: right;
+  width: 308px;
+  padding-top: 14px;
+  margin-right: 16px;
+}
+.team_profile .right_column .scoreboard_block .caption {
+  height: 23px;
+  padding-top: 7px;
+  font-size: 15px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: #64B352 none;
+}
+.team_profile .right_column .scoreboard_block .subcaption {
+  height: 23px;
+  padding-top: 7px;
+  text-align: center;
+  background: #EEEEEE none;
+}
+.team_profile .right_column .scoreboard_table .group_title {
+  margin-left: 12px;
+  padding: 15px 0px;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.team_profile .right_column .scoreboard_table .group_table {
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.2em;
+  text-align: left;
+  vertical-align: top;
+}
+.team_profile .right_column .scoreboard_table .group_table td {
+  padding: 4px 5px;
+}
+.team_profile .right_column .scoreboard_table .group_table .dark_row td {
+  background-color: #FBFBFB;
+}
+.team_profile .right_column .scoreboard_table .group_table .captions td {
+  font-weight: bold;
+  background: #EEEEEE none;
+}
+.team_profile .right_column .scoreboard_table .group_table .team {
+  padding-left: 12px;
+}
+.team_profile .right_column .scoreboard_table .group_table .played {
+  width: 30px;
+}
+.team_profile .right_column .scoreboard_table .group_table .goal_difference {
+  width: 30px;
+}
+.team_profile .right_column .scoreboard_table .group_table .points {
+  width: 30px;
+}
+.team_profile .right_column .scoreboard_table .group_table a {
+  text-decoration: none;
+  color: #555555;
+}
+.team_profile .right_column .scoreboard_table .group_table a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.team_profile .right_column .scoreboard_table .show_more {
+  display: block;
+  padding: 12px 0px;
+}
+.team_profile .right_column .scoreboard_results {
+  padding-bottom: 15px;
+}
+.team_profile .right_column .scoreboard_results .results_block {
+  padding: 0px 10px 0px 12px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.team_profile .right_column .scoreboard_results .results_block .date {
+  padding: 15px 0px 0px 0px !important;
+  font-weight: bold;
+}
+.team_profile .right_column .scoreboard_results .results_table {
+  vertical-align: middle;
+}
+.team_profile .right_column .scoreboard_results .results_table td {
+  padding: 10px 0px 0px 0px;
+}
+.team_profile .right_column .scoreboard_results .results_table a {
+  text-decoration: none;
+  color: #555555;
+}
+.team_profile .right_column .scoreboard_results .results_table a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.team_profile .right_column .scoreboard_results .first_team {
+  text-align: right;
+}
+.team_profile .right_column .scoreboard_results .second_team {
+  text-align: left;
+}
+.team_profile .right_column .scoreboard_results .score {
+  padding: 10px 20px 0px 20px !important;
+  text-align: center;
+  white-space: nowrap;
+}
+.team_profile .right_column .scoreboard_fixtures .fixtures_block {
+  padding: 0px 10px 0px 12px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.team_profile .right_column .scoreboard_fixtures .fixtures_table {
+  margin-top: 15px;
+}
+.team_profile .right_column .scoreboard_fixtures .fixtures_table td {
+  padding: 1px 0px;
+  vertical-align: middle;
+}
+.team_profile .right_column .scoreboard_fixtures .fixtures_table a {
+  text-decoration: none;
+  color: #555555;
+}
+.team_profile .right_column .scoreboard_fixtures .fixtures_table a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.team_profile .right_column .scoreboard_fixtures .first_team {
+  text-align: right;
+}
+.team_profile .right_column .scoreboard_fixtures .second_team {
+  text-align: left;
+}
+.team_profile .right_column .scoreboard_fixtures .versus {
+  padding: 1px 20px !important;
+  text-align: center;
+}
+.team_profile .right_column .scoreboard_fixtures .kickoff {
+  width: 65px;
+  text-align: right;
+}
+.team_profile .right_column .bottom_row {
+  height: 22px;
+  margin: 30px 0px 0px 0px;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  text-align: right;
+}
+.team_profile .right_column .bottom_row a {
+  text-decoration: none;
+  color: #777777;
+}
+.team_profile .right_column .bottom_row a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.team_profile .right_column .bottom_row .rss_link {
+  padding-right: 12px;
+}
+.team_profile .right_column .bottom_row .rss_link:after {
+  content: "";
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: -8px;
+  background: url(../img/rss_icon.png) 0px 0px no-repeat;
+}
+.team_profile .right_column .aside_image {
+  width: 308px;
+  margin-top: 15px;
+}
+.team_profile .right_column .aside_image img {
+  width: inherit;
+}
+.team_profile .right_column .show_more {
+  padding: 12px 0px;
+}
+.team_profile .right_column .first_team a img,
+.team_profile .right_column .second_team a img {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-bottom: -4px;
+}
+.team_profile .right_column .first_team img {
+  margin-left: 5px;
+}
+.team_profile .right_column .second_team img {
+  margin-right: 5px;
+}

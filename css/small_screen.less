@@ -1,0 +1,884 @@
+@import (reference) "helpers.less";
+
+/* main styles */
+body {
+	min-width: 1004px;
+}
+
+.centered {
+	width: 984px;
+}
+
+.header {
+    .top_row {
+        min-height: 15px;
+    }
+    .centered {
+        width: 984px;
+    }
+    .logo {
+        width: 130px;
+        height: 130px;
+        margin: -32px 10px -32px 0px;
+        background: url(../img/logo_background_s.png) 0px 0px no-repeat;
+        a {
+            width: 77px;
+            height: 77px;
+            margin: 26px 0px 0px 20%;
+            background: url(../img/logo.png) 0px 0px no-repeat;
+            background-size: cover;
+        }
+    }
+    .navigation {
+        width: 815px;
+        li > a {
+            padding: 26px 7px 0px 7px;
+            .font(1.4em, 1.2em);
+        }
+        li:nth-child(7) {
+            .subnav {
+                left: -500px;
+            }
+        }
+    }
+    .quick_search {
+        width: 210px;
+    }
+    .search_field {
+        width: 168px;
+    }
+    .customize_menu {
+        ul {
+            width: 984px;
+        }
+        li {
+            .font(13px, 1.2em);
+        }
+        .customize_label {
+        margin-top: 14px;
+            padding-left: 25px;
+        }
+        .ez-checkbox {
+            top: -3px;
+        }
+    }
+}
+
+.content_block {
+    width: 984px;
+    .main_column {
+        width: 784px;
+        .wide_tiles {
+            width: 773px;
+        }
+        .short_tiles {
+            width: 381px;
+        }
+    }
+    .content {
+        width: 741px;
+    }
+}
+
+footer {
+    .copyright {
+        width: 350px;
+    }
+    .footer_nav {
+        width: 450px;
+    }
+}
+
+/* Home page styles */
+
+.tiles_block {
+    .tiles {
+        .caption_block {
+            cursor: grab;
+            cursor: -webkit-grab;
+            cursor: -moz-grab;
+        }
+        .caption_block:active {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+            cursor: -moz-grabbing;
+        }
+    }
+    .tabs_block {
+        ul {
+            table-layout: auto;
+        }
+        a,
+        span {
+            padding: 6px 5px 0px 6px;
+        }
+    }
+    .main_news {
+        width: 381px;
+        height: 302px;
+        img {
+            height: 224px;
+        }
+    }
+    .scroll_area {
+        max-height: 385px;
+    }
+}
+
+/* Blog/Forums tile styles */
+.blog_forums_tile {
+    .carousel_block {
+        width: 675px;
+        .jcarousel-skin-tango {
+            width: 675px;
+            .jcarousel-container-horizontal,
+            .jcarousel-clip-horizontal {
+                width: 675px;
+            }
+            .jcarousel-item {
+                width: 337.5px;
+            }
+        }
+    }
+}
+
+/* Betting lines tile styles */
+.betting_lines_tile {
+    .captions_row {
+        .time {
+            width: 67px;
+            padding-left: 16px;
+        }
+        .rot {
+            width: 50px;
+        }
+        .competitor {
+            width: 133px;
+            padding-right: 10px;
+        }
+        .point_spread {
+            width: 143px;
+        }
+        .moneyline {
+            width: 142px;
+        }
+        .total {
+            width: 145px;
+        }
+    }
+}
+
+/* Last news tile styles */
+.latest_news_tile {
+  .articles {
+        .font(15px, 1.15em);
+    }
+    .article {
+        display: table;
+        margin: 10px 30px 0px 15px;
+        .date,
+        .body {
+            display: table-cell;
+            padding-bottom: 0px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .date {
+            width: 52px;
+            color: @light_color;
+        }
+        .body {
+            text-decoration: none;
+        }
+        .title {
+            font-weight: bold;
+            text-decoration: none;
+            color: @black_color;
+        }
+        .title:hover {
+            text-decoration: underline;
+            color: @green_color;
+        }
+        .description {
+            display: block;
+            color: @dark_color;
+        }
+    }
+    .article:last-child {
+        margin-bottom: 5px;
+    }
+}
+
+/* Videos tile styles */
+.videos_tile {
+    .player_block {
+        float: left;
+        width: 320px;
+        height: 200px;
+        margin: 16px 0px 16px 17px;
+    }
+    .playlist_block {
+        width: 414px;
+    }
+    .search_video {
+        .search_field {
+            width: 289px;
+        }
+        .search_button {
+            width: 88px;
+        }
+    }
+}
+
+/* My scoreboard tile styles */
+.my_scoreboard_tile {
+    .scoreboards {
+        max-height: 687px;
+    }
+    .fixtures_block {
+        padding: 20px 10px 0px 10px;
+    }
+}
+
+/* Partners tile carousel styles */
+.partners_block {
+    .blog_forums_tile > .carousel_block;
+    .jcarousel-skin-tango {
+        .jcarousel-item {
+            width: 675px;
+            height: 126px;
+            img {
+                width: 85%;
+            }
+        }
+    }
+}
+
+/* edit tiles stiles  */
+.short_tiles {
+    .form_block {
+        .add_block {
+            .selects {
+                width: 345px;
+            }
+        }
+        .list_block {
+            .list_captions {
+                .label {
+                    width: 260px;
+                }
+                .actions {
+                    width: 84px;
+                }
+            }
+            .list {
+                .label {
+                    .list_captions > .label;
+                }
+            }
+        }
+        .buttons {
+            margin: 0px auto;
+        }
+        .buttons:disabled {
+            cursor: default;
+            opacity: 0.4 !important;
+        }
+    }
+}
+
+/* edit headlines tile styles */
+.headlines_tile {
+    .add_block {
+        height: 165px;
+    }
+    .list_block {
+        height: 533px;
+    }
+    .scroll_area {
+        height: 440px;
+    }
+}
+
+/* Forum pages styles */
+
+/* forums styles */
+.forums {
+    .top_row {
+        .add_button {
+            width: 214px;
+        }
+    }
+    .forums_list {
+        width: 214px;
+        a {
+            wdth: 214px;
+        }
+        a:hover,
+        .current {
+            color: @white_color;
+            background-color: #63B352;
+        }
+        .current {
+            background-position: 201px 7px;
+        }
+    }
+    .forum {
+        width: 500px;
+        .topics {
+            .create_button {
+                width: 500px;
+            }
+        }
+    }
+}
+
+/* topic styles */
+.forum_topic {
+    .body_block {
+        width: 591px;
+    }
+    .author_block {
+        width: 118px;
+        .author_avatar,
+        .author_avatar img {
+            display: block;
+            width: 118px;
+            height: 118px;
+        }
+    }
+    .comments_block {
+        padding: 16px 16px 0px 16px;
+        .caption {
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: @green_color;
+            border-bottom: 1px solid #BBBBBB;
+            .counter {
+                font-weight: normal;
+            }
+        }
+        .comment_form {
+            .textareas {
+                width: 717px;
+                height: 146px;
+                margin-bottom: 25px;
+                padding: 15px 10px;
+                border: 2px solid #EEEEEE;
+            }
+        }
+    }
+}
+
+/* add topic styles */
+.topic_form {
+    .inputs {
+        width: 717px;
+    }
+    .textareas {
+        width: 717px;
+    }
+}
+
+/* Profile pages styles */
+
+/* profile styles */
+.profile {
+    .profile_info {
+        min-width: 376px;
+        max-width: 376px;
+    }
+    .profile_actions {
+        width: 48px;
+        text-align: right;
+        a {
+            overflow: hidden;
+            width: 0px;
+            border-right: 2px solid #64B352;
+        }
+        a:hover {
+            border-right: 2px solid #86C479;
+        }
+    }
+    .profile_narrow {
+        margin-right: 0px;
+    }
+    .profile_average {
+        width: 476px;
+    }
+}
+
+/* team profile */
+.team_profile {
+    .team_block {
+        .team_info {
+            min-width: 376px;
+            max-width: 376px;
+        }
+        .team_actions {
+            width: 48px;
+            text-align: right;
+            a {
+                overflow: hidden;
+                width: 0px;
+                border-right: 2px solid #64B352;
+            }
+            a:hover {
+                border-right: 2px solid #86C479;
+            }
+        }
+        .social_buttons {
+            clear: both;
+            float: none;
+            padding-top: 20px;
+        }
+    }
+    .list_column {
+        width: 492px !important;
+        .articles_list {
+            width: 492px !important;
+        }
+        .article {
+            width: 228px;
+            height: auto;
+            .thumb {
+                width: 75px !important;
+                height: 75px !important;
+                margin-right: 10px !important;
+                img {
+                    width: 75px !important;
+                    height: 75px !important;
+                }
+            }
+            .body {
+                width: 143px;
+                height: auto;
+                padding-bottom: 0px;
+            }
+            .datetime {
+                display: block;
+                position: relative !important;
+                margin-top: 9px;
+                padding-top: 1px;
+                padding-left: 17px !important;
+                .font(11px, 1.2em) !important;
+                background-position: 0px 1px !important;
+                background-size: 8.5% !important;
+            }
+        }
+        .pagination {
+            width: 492px !important;
+        }
+    }
+    .right_column {
+        width: 238px !important;
+        .first_team,
+        .second_team {
+            a {
+                img {
+                    display: none;
+                }
+            }
+        }
+        .scoreboard_table {
+             .group_table  {
+                .goal_difference,
+                .played,
+                .points {
+                    width: 22px !important;
+                }
+             }
+        }
+        .aside_image {
+             width: 239px !important;
+            img {
+                 width: 239px !important;
+            }
+        }
+    }
+}
+
+/* Pools page styles */
+
+/* polls styles */
+.polls {
+    .poll {
+        width: 361px;
+    }
+}
+
+/* Blog pages styles */
+
+/* blog styles */
+.my_blog {
+    .articles {
+        width: 492px;
+    }
+    .archive_column {
+        width: 238px;
+        .add_button {
+            width: 238px;
+        }
+    }
+}
+
+/* view blog article styles */
+.my_blog_article {
+    .title {
+        width: 520px !important;
+    }
+}
+
+.comment_form {
+    .textareas {
+        width: 717px;
+    }
+}
+
+/* add blog article styles */
+.blog_article_form {
+    .inputs {
+        width: 717px;
+    }
+    .textareas {
+        width: 717px;
+    }
+}
+
+/* Clubs pages styles */
+
+/* clubs tyles */
+.my_clubs {
+    .add_club {
+        width: 357px;
+        height: 60px;
+        padding-top: 40px;
+    }
+    .club {
+        width: 351px;
+        height: 110px;
+        .thumb {
+            width: 100px;
+            height: 100px;
+            .edit,
+            .delete {
+                width: 100px;
+            }
+            .edit {
+                top: 0px;
+                left: 0px;
+                height: 35px;
+                padding-top: 15px;
+            }
+            .delete {
+                top: 50px;
+                height: 35px;
+                padding-top: 15px;
+            }
+        }
+        .body {
+            float: left;
+            width: 234px;
+            height: 81px;
+            padding-bottom: 22px;
+            .title {
+                overflow: hidden;
+                max-height: 21px;
+                margin-bottom: 8px;
+            }
+            .description {
+                overflow: hidden;
+                height: 36px;
+                padding-bottom: 0px;
+            }
+            .members_count {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                padding-left: 30px;
+                .font(14px, 1.2em);
+                color: @light_color;
+                background: url(../img/members_icon.png) 0px 0px no-repeat;
+            }
+        }
+    }
+}
+
+/* News pages styles */
+
+/* news styles */
+.news {
+    .list_column {
+        width: 492px !important;
+        .top_news {
+            .title {
+                width: 305px !important;
+                .font(22px, 1.4em);
+            }
+        }
+        .news_list {
+            width: 492px !important;
+        }
+        .article {
+            width: 228px;
+            height: auto;
+            .thumb {
+                width: 75px !important;
+                height: 75px !important;
+                margin-right: 10px !important;
+                img {
+                    width: 75px !important;
+                    height: 75px !important;
+                }
+            }
+            .body {
+                width: 143px;
+                height: auto;
+                padding-bottom: 0px;
+            }
+            .datetime {
+                display: block;
+                position: relative !important;
+                margin-top: 9px;
+                padding-top: 1px;
+                padding-left: 17px !important;
+                .font(11px, 1.2em) !important;
+                background-position: 0px 1px !important;
+                background-size: 8.5% !important;
+            }
+        }
+    }
+    .right_column {
+        width: 238px !important;
+        .scoreboard_table {
+             .group_table  {
+                .goal_difference,
+                .played,
+                .points {
+                    width: 22px !important;
+                }
+             }
+        }
+        .aside_image {
+             width: 239px !important;
+            img {
+                 width: 239px !important;
+            }
+        }
+    }
+}
+
+/* Articles pages styles */
+
+/* articles styles */
+.my_articles {
+    .add_article {
+        width: 361px;
+    }
+    .add_article:hover:before {
+        background-position: 0px -22px;
+    }
+    .article {
+        width: 361px;
+        .body {
+            width: 244px;
+        }
+    }
+}
+
+/* view article styles */
+.my_article {
+    .category {
+        max-width: 365px;
+    }
+    .datetime {
+        width: 365px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .author {
+        position: relative;
+        max-width: 365px;
+    }
+    .more_articles {
+        .article {
+            width: 361px;
+            .body {
+                width: 244px;
+            }
+        }
+        .article:nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+/* add article styles */
+.article_form {
+    .article_cover {
+        width: 239px;
+    }
+    .upload_cover {
+        width: 239px;
+    }
+    .upload_field {
+        width: 239px;
+    }
+    .inputs {
+        width: 463px;
+    }
+    .textareas {
+        width: 717px;
+        height: 399px;
+        padding: 10px;
+        border: 2px solid #EEEEEE;
+    }
+}
+
+/* articles author view styles */
+.articles_author {
+    .author_info {
+        width: 600px;
+    }
+}
+
+.articles_block {
+    .article {
+        width: 361px;
+        .body {
+            width: 244px;
+        }
+    }
+}
+
+/* Photo albums pages styles */
+
+/* photo albums styles */
+.my_photo_albums {
+    .album_add_link {
+        width: 358px;
+        height: 127px;
+        padding-top: 107px;
+    }
+    .album_block {
+        width: 358px;
+        height: 234px;
+        .thumb {
+            width: 358px;
+            height: 234px;
+        }
+        .bottom_gradient {
+            width: 334px;
+        }
+        .top_gradient {
+            width: 328px;
+        }
+    }
+}
+
+/* photo album styles */
+.my_photo_album {
+    .add_photo_block {
+        width: 358px;
+    }
+    .upload_photo {
+        width: 358px;
+        height: 234px;
+    }
+    .upload_field {
+        width: 358px;
+        height: 234px;
+    }
+    .photo_block {
+        .my_photo_albums > .album_block;
+    }
+}
+
+/* add photo styles */
+.add_photo_form {
+    .description {
+        width: 392px;
+        .textareas {
+            width: 368px;
+            height: 126px;
+            border: 2px solid #EEEEEE;
+        }
+    }
+}
+
+/* Video albums styles */
+
+/* video albums styles */
+.my_video_albums {
+    .my_photo_albums;
+}
+
+/* video album styles */
+.my_video_album {
+    .my_photo_albums;
+    margin-bottom: 0px;
+    .video_block {
+        .my_photo_albums > .album_block;
+        .overlay {
+            width: 358px;
+            height: 234px;
+        }
+    }
+}
+
+/* videos styles */
+.videos_album {
+    .my_video_album;
+}
+
+/* Games page styles */
+
+/* game styles */
+.page_title {
+    padding-right: 15px !important;
+    .notice {
+        display: none;
+    }
+}
+
+.game_page {
+    .game_info {
+        .team_name {
+            width: 210px !important;
+        }
+    }
+    .main_column {
+        width: 476px !important;
+        .team_table {
+            .pos_col {
+                width: 29px !important;
+            }
+            .no_col {
+                width: 23px !important;
+            }
+            .name_col {
+
+            }
+            .sh_col,
+            .sg_col,
+            .g_col,
+            .a_col,
+            .of_col,
+            .fd_col,
+            .fc_col,
+            .sv_col,
+            .yc_col,
+            .rc_col {
+                width: 25px !important;
+            }
+        }
+    }
+    .game_narrow {
+        width: 238px !important;
+        .match_block .match_table .label {
+            white-space: normal !important;
+        }
+    }
+}

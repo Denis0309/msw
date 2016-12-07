@@ -1,0 +1,150 @@
+/* polls styles */
+.polls {
+  margin: 0px -5px;
+}
+.polls .poll {
+  display: table;
+  float: left;
+  width: 490px;
+  margin: 0px 7px 13px 7px;
+}
+.polls .poll .cell {
+  display: table-cell;
+  height: 67px;
+  padding: 5px 15px;
+  text-align: left;
+  vertical-align: middle;
+  background: #DDDDDD none;
+}
+.polls .poll .info {
+  line-height: 1.3em;
+  font-weight: bold;
+}
+.polls .poll .votes {
+  display: block;
+  padding-top: 1px;
+  font-weight: normal;
+}
+.polls .poll .actions {
+  width: 105px;
+  padding-left: 30px;
+}
+.polls .poll .buttons {
+  width: 88px;
+}
+.polls .poll:hover .cell {
+  background: #E0F0DC none;
+}
+.poll_popup .popup_body {
+  position: relative;
+  width: 337px;
+  padding: 15px 36px 30px 39px;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  text-align: center;
+}
+.poll_popup .question {
+  padding-bottom: 12px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.poll_popup .answers {
+  display: table;
+  width: auto;
+  max-width: 337px;
+  min-width: 215px;
+  margin: 0px auto;
+}
+.poll_popup .answers .answer {
+  display: block;
+  position: relative;
+  min-height: 20px;
+  margin-top: 12px;
+  padding-left: 32px;
+  text-align: left;
+}
+.poll_popup .answers .answer {
+  margin-top: 15px;
+  padding-bottom: 5px;
+}
+.poll_popup .answers_result {
+  width: 170px;
+  text-align: left;
+  width: 318px;
+  margin: 0px auto;
+}
+.poll_popup .answers_result .answer {
+  padding-bottom: 5px;
+}
+.poll_popup .answers_result .label {
+  padding: 0px;
+}
+.poll_popup .answers_result .progress_bar {
+  display: block;
+  width: 100%;
+  height: 15px;
+  background: #EEEEEE none;
+}
+.poll_popup .answers_result .progress {
+  display: block;
+  height: inherit;
+  background: #64B352 none;
+}
+.poll_popup .answers_result .votes {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+.poll_popup .answers_result .answer {
+  padding-bottom: 10px;
+}
+.poll_popup .answers_result .progress_bar {
+  float: left;
+  width: 271px;
+}
+.poll_popup .answers_result .votes {
+  float: right;
+  width: 42px;
+  margin-top: -1px;
+  padding-left: 5px;
+  text-align: left;
+}
+.poll_popup .poll_submit {
+  outline: none;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  padding: 0px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background: #64B352 none;
+  display: inline-block;
+  width: 88px;
+  margin-top: 22px;
+}
+.poll_popup .actions a {
+  text-decoration: none;
+  color: #777777;
+}
+.poll_popup .actions a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.poll_popup .actions .to_vote {
+  width: 128px;
+  margin: 14px auto 0px auto;
+  text-decoration: none;
+  color: #ffffff;
+}
+.poll_popup .results {
+  position: absolute;
+  bottom: 35px;
+  right: 52px;
+}

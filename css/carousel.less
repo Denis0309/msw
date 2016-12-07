@@ -1,0 +1,93 @@
+@import (reference) "helpers.less";
+
+/* Blog/Forums tile carousel styles */
+.carousel_block {
+	width: 933px;
+    height: 100px;
+	margin: 0px auto 0px auto;
+	.jcarousel-skin-tango {
+		width: 933px;
+		height: 100px;
+		margin: 0px auto;
+        .jcarousel-direction-rtl {
+		  direction: rtl;
+	   }
+       .jcarousel-container-horizontal {
+	       width: 933px;
+	       height: 100px;
+           padding: 0px;
+	   }
+       .jcarousel-clip {
+		  overflow: hidden;
+	   }
+       .jcarousel-clip-horizontal {
+            width: 933px;
+            height: 100px;
+            margin: 0px;
+        }
+        .jcarousel-item {
+            width: 311px;
+            height: 100px;
+        }
+        .jcarousel-item-horizontal {
+            margin: 0px;
+        }
+        .jcarousel-prev-horizontal,
+        .jcarousel-next-horizontal {
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            width: 48px;
+            height: 100px;
+        }
+        .jcarousel-prev-horizontal {
+            left: -48px;
+        }
+        .jcarousel-next-horizontal {
+            right: -48px;
+        }
+        .jcarousel-prev-horizontal:before,
+        .jcarousel-next-horizontal:before {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 100px;
+            margin: 0px auto;
+            background-image: url(../img/carousel_nav.png);
+            background-repeat: no-repeat;
+        }
+        .jcarousel-prev-horizontal:before {
+            background-position: 0px 50%;
+        }
+        .jcarousel-next-horizontal:before {
+            background-position: -14px 50%;
+        }
+	}
+}
+
+/* Partners tile carousel styles */
+.partners_block {
+    .carousel_block;
+    height: 126px;
+    .jcarousel-skin-tango {
+        height: 126px;
+        .jcarousel-container-horizontal {
+            height: 126px;
+        }
+        .jcarousel-clip-horizontal {
+            height: 126px;
+        }
+        .jcarousel-item {
+            width: 933px;
+            height: 126px;
+        }
+        .jcarousel-prev-horizontal,
+        .jcarousel-next-horizontal {
+            height: 126px;
+        }
+        .jcarousel-prev-horizontal:before,
+        .jcarousel-next-horizontal:before {
+            height: 126px;
+        }
+    }
+}

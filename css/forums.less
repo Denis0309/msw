@@ -1,0 +1,476 @@
+@import (reference) "base.less";
+
+/* forums styles */
+.forums {
+    .top_row {
+        padding-bottom: 6px;
+        .add_button {
+            float: left;
+            display: block;
+            width: 234px;
+            height: 38px;
+            margin: 0px;
+            padding-top: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            color: @dark_color;
+            background: #F0F0F0 none;
+        }
+        .add_button:before {
+            content: "";
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            margin: 0px 10px -4px 0px;
+            background: url(../img/icons.png) 0px 0px no-repeat;
+        }
+        .add_button:hover {
+            color: @green_color;
+            background: #E8F4E5 none;
+        }
+        .add_button:hover:before {
+            background-position: 0px -22px;
+        }
+    }
+    .forum_search {
+        float: right;
+        position: relative;
+        width: 257px;
+        .search_field {
+            .header > .search_field;
+            width: 211px;
+            height: 21px;
+            border: 2px solid #EEEEEE;
+            background: #EEEEEE none;
+        }
+        .search_field:focus {
+            border-color: #64B352;
+        }
+        .search_button {
+            .header > .search_button;
+            top: 0px;
+            right: 0px;
+            width: 30px;
+            height: 25px;
+            background-position: 5px 5px;
+            
+        }
+        .search_button:hover {
+            background-position: 5px -29px;
+        }
+    }
+    .forums_list {
+        float: left;
+        width: 234px;
+        margin-right: 26px;
+        a {
+            display: block;
+            wdth: 234px;
+            height: 21px;
+            margin-bottom: 6px;
+            padding: 4px 19px 0px 19px;
+            text-decoration: none;
+            font-weight: bold;
+            color: @dark_color;
+            background: #DDDDDD none;
+        }
+        a:hover,
+        .current {
+            color: @white_color;
+            background-color: #63B352;
+        }
+        .current {
+            background-image: url(../img/current_link_icon.png);
+            background-position: 221px 7px;
+            background-repeat: no-repeat;
+        }
+    }
+    .forum {
+        margin-top: 22px;
+        float: right;
+        width: 738px;
+        .forum_title {
+            position: relative;
+            padding-right: 220px;
+            padding-bottom: 8px;
+            .font(15px, 1.2em);
+            text-decoration: none;
+            font-weight: bold;
+            color: @green_color;
+            a {
+                text-decoration: none;
+            }
+            .topics_count {
+                font-weight: normal;
+            }
+            .actions {
+                position: absolute;
+                top: -4px;
+                right: 0px;
+                width: 200px;
+                text-align: right;
+            }
+            .edit,
+            .delete {
+                display: inline-block;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                color: @light_color;
+            }
+            .edit:before,
+            .delete:before {
+                content: "";
+                display: inline-block;
+                background-image: url(../img/icons.png);
+                background-repeat: no-repeat;
+            }
+            .edit:hover,
+            .delete:hover {
+                color: @green_color;
+            }
+            .edit {
+                margin-right: 15px;
+            }
+            .edit:before {
+                width: 21px;
+                height: 20px;
+                margin: 0px 6px -3px 0px;
+                background-position: -20px -44px;
+            }
+            .edit:hover:before {
+                background-position: -20px -66px;
+            }
+            .delete:before {
+                width: 17px;
+                height: 21px;
+                margin: 0px 6px -3px 0px;
+                background-position: -42px -44px;
+            }
+            .delete:hover:before {
+                background-position: -42px -66px;
+            }
+        }
+        .topics {
+            border-top: 1px solid #BBBBBB;
+            .create_button {
+                .top_row > .add_button;
+                float: none;
+                width: 738px;
+                height: 42px;
+                padding-top: 23px;
+            }
+            .create_button:before {
+                content: "";
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                margin: 0px 10px -4px 0px;
+                background: url(../img/icons.png) 0px 0px no-repeat;
+            }
+            .create_button:hover {
+                color: @green_color;
+                background: #E8F4E5 none;
+            }
+            .create_button:hover:before {
+                background-position: 0px -22px;
+            }
+        }
+        .topic {
+            display: table;
+            width: 100%;
+            .main_info,
+            .posts_count,
+            .views_count {
+                display: table-cell;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+                vertical-align: middle;
+                color: @grey_color;
+            }
+            .main_info {
+                padding-right: 20px;
+                text-align: left;
+            }
+            .posts_count,
+            .views_count {
+                width: 55px;
+                font-weight: bold;
+                span {
+                    display: block;
+                    font-weight: normal;
+                }
+            }
+        }
+        .topic_title {
+            text-decoration: none;
+            font-weight: bold;
+            color: @dark_color;
+        }
+        .topic_title:hover {
+            text-decoration: underline;
+            color: @green_color;
+        }
+        .latest_post {
+            display: block;
+            a {
+                text-decoration: none;
+                color: @grey_color;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: @green_color;
+            }
+            .to_latest_post {
+                text-decoration: none !important;
+            }
+        }
+    }
+    .forum:first-child {
+        margin-top: 0px;
+    }
+}
+
+/* add topic styles */
+.topic_form {
+    .inputs {
+        width: 974px;
+        height: 26px;
+        margin-bottom: 15px;
+        border: 2px solid #EEEEEE;
+    }
+    .inputs:focus {
+        border-color: #64B352;
+    }
+    .selects {
+        width: 259px;
+        margin-bottom: 15px;
+    }
+    .textareas {
+        width: 974px;
+        height: 399px;
+        padding: 10px;
+        border: 2px solid #EEEEEE;
+    }
+    .textareas:focus {
+        border-color: #64B352;
+    }
+    .buttons {
+        display: block;
+        width: 168px;
+        margin: 22px auto 0px auto;
+    }
+}
+
+/* topic styles */
+.forum_topic {
+    margin: -16px -16px 0px -16px;
+    .topic_body {
+        background: #F5F5F5 none;
+    }
+    .body_block {
+        float: left;
+        width: 799px;
+        min-height: 250px;
+        padding: 16px;
+        background: #EEEEEE none;
+        .title {
+            padding-bottom: 5px;
+            .font(1em, 1.2em);
+            font-weight: bold;
+            color: @green_color;
+        }
+        .datetime {
+            display: block;
+            padding-left: 20px;
+            .font(14px, 1.2em);
+            color: @light_color;
+            background: url(../img/date_icon.png) 0px 0px no-repeat;
+        }
+        .body {
+            padding-top: 23px;
+        }
+        .actions {
+            padding: 13px 0px 5px 0px;
+            text-align: right;
+            border-top: 1px solid #BBBBBB;
+            .quote,
+            .edit,
+            .delete {
+                display: inline-block;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                color: @light_color;
+            }
+            .quote:before,
+            .edit:before,
+            .delete:before {
+                content: "";
+                display: inline-block;
+                background-image: url(../img/icons.png);
+                background-repeat: no-repeat;
+            }
+            .quote:hover,
+            .edit:hover,
+            .delete:hover {
+                color: @green_color;
+            }
+            .quote {
+                margin-right: 15px;
+            }
+            .quote:before {
+                width: 23px;
+                height: 17px;
+                margin: 0px 6px -2px 0px;
+                background-position: -134px 0px;
+            }
+            .quote:hover:before {
+                background-position: -134px -54px;
+            }
+            .edit {
+                margin-right: 15px;
+            }
+            .edit:before {
+                width: 21px;
+                height: 20px;
+                margin: 0px 6px -3px 0px;
+                background-position: -20px -44px;
+            }
+            .edit:hover:before {
+                background-position: -20px -66px;
+            }
+            .delete:before {
+                width: 17px;
+                height: 21px;
+                margin: 0px 6px -3px 0px;
+                background-position: -42px -44px;
+            }
+            .delete:hover:before {
+                background-position: -42px -66px;
+            }
+        }
+    }
+    .author_block {
+        float: right;
+        width: 168px;
+        padding: 16px;
+        text-align: center;
+        .author_avatar,
+        .author_avatar img {
+            display: block;
+            width: 168px;
+            height: 168px;
+        }
+        .author_avatar {
+            margin-bottom: 6px;
+        }
+        .author_name {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: @dark_color;
+        }
+    }
+    .comments_block {
+        padding: 16px 16px 0px 16px;
+        .caption {
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: @green_color;
+            border-bottom: 1px solid #BBBBBB;
+            .counter {
+                font-weight: normal;
+            }
+        }
+        .comment {
+            margin-bottom: 15px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #BBBBBB;
+            .title {
+                padding-bottom: 5px;
+                font-weight: bold;
+                color: @green_color;
+                a {
+                    text-decoration: none;
+                    color: @green_color;
+                }
+            }
+            .datetime {
+                .body_block > .datetime;
+                margin-bottom: 17px;
+            }
+            .author {
+                float: left;
+                width: 100px;
+                margin-right: 15px;
+                text-align: center;
+            }
+            .avatar,
+            .avatar img {
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+            .avatar {
+                margin-bottom: 4px;
+            }
+            .name {
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .actions_row {
+                padding-top: 5px;
+                font-weight: bold;
+                text-align: right;
+                a {
+                    margin: 0px 5px 0px 15px;
+                    margin-left: 15px;
+                    text-decoration: none;
+                    color: @light_color;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    color: @green_color;
+                }
+            }
+        }
+        .comment_form {
+            .caption {
+                .comments_block > .caption;
+                margin-bottom: 10px;
+                border-bottom: none;
+            }
+            .inputs {
+                width: 514px;
+                margin-bottom: 17px;
+                border: 2px solid #EEEEEE;
+            }
+            .textareas {
+                width: 974px;
+                height: 146px;
+                margin-bottom: 25px;
+                padding: 15px 10px;
+                border: 2px solid #EEEEEE;
+            }
+            .inputs:focus,
+            .textareas:focus {
+                border-color: #64B352;
+            }
+            .mce-tinymce {
+                margin-bottom: 25px;
+            }
+            .buttons {
+                width: 168px;
+                margin: 0px auto;
+            }
+        }
+    }
+}

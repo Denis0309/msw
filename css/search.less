@@ -1,0 +1,36 @@
+@import (reference) "base.less";
+
+/* search results styles */
+.search_results {
+    .caption {
+        .font(18px, 1.2em);
+        font-weight: bold;
+        color: @green_color;
+    }
+    .results {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li {
+            padding-top: 20px;
+        }
+        a {
+            display: inline-block;
+            position: relative;
+            padding-left: 15px;
+            text-decoration: none;
+            color: @dark_color;
+        }
+        a:before {
+            content: "\203A\00a0";
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: @green_color;
+        }
+    }
+}

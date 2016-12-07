@@ -1,0 +1,111 @@
+@import (reference) "base.less";
+
+/* polls styles */
+.polls {
+    margin: 0px -5px;
+    .poll {
+        display: table;
+        float: left;
+        width: 490px;
+        margin: 0px 7px 13px 7px;
+        .cell {
+            display: table-cell;
+            height: 67px;
+            padding: 5px 15px;;
+            text-align: left;
+            vertical-align: middle;
+            background: #DDDDDD none;
+        }
+        .info {
+            line-height: 1.3em;
+            font-weight: bold;
+        }
+        .votes {
+            display: block;
+            padding-top: 1px;
+            font-weight: normal;
+        }
+        .actions {
+            width: 105px;
+            padding-left: 30px;
+        }
+        .buttons {
+            width: 88px;
+        }
+    }
+    .poll:hover {
+        .cell {
+            background: #E0F0DC none;
+        }
+    }
+}
+
+.poll_popup {
+    .popup_body {
+        position: relative;
+        width: 337px;
+        padding: 15px 36px 30px 39px;
+        .font(1.5em, 1.2em);
+        text-align: center;
+    }
+    .question {
+        .content_block > .left_column > .poll_block > .question;
+        .font(1.2em, 1.2em);
+        font-weight: bold;
+    }
+    .answers {
+        .content_block > .left_column > .poll_block > .answers;
+        display: table;
+        width: auto;
+        max-width: 337px;
+        min-width: 215px;
+        margin: 0px auto;
+        .answer {
+            margin-top: 15px;
+            padding-bottom: 5px;
+        }
+    }
+    .answers_result {
+        .content_block > .left_column > .poll_block > .answers_result;
+        width: 318px;
+        margin: 0px auto;
+        .answer {
+            padding-bottom: 10px;
+        }
+        .progress_bar {
+            float: left;
+            width: 271px;
+        }
+        .votes {
+            float: right;
+            width: 42px;
+            margin-top: -1px;
+            padding-left: 5px;
+            text-align: left;
+        }
+    }
+    .poll_submit {
+        .content_block > .left_column > .poll_block > .poll_submit;
+    }
+    .actions {
+        a {
+            text-decoration: none;
+            color: @grey_color;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: @green_color;
+        }
+        .to_vote {
+            width: 128px;
+            margin: 14px auto 0px auto;
+            text-decoration: none;
+            color: @white_color;
+        }
+    }
+    .results {
+        position: absolute;
+        bottom: 35px;
+        right: 52px;
+    }
+}

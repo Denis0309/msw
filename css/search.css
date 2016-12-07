@@ -1,0 +1,33 @@
+/* search results styles */
+.search_results .caption {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #64b352;
+}
+.search_results .results {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.search_results .results li {
+  padding-top: 20px;
+}
+.search_results .results a {
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  text-decoration: none;
+  color: #555555;
+}
+.search_results .results a:before {
+  content: "\203A\00a0";
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.search_results .results a:hover {
+  text-decoration: underline;
+  color: #64b352;
+}

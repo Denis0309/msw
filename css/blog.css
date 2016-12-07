@@ -1,0 +1,284 @@
+/* view blog article styles */
+.my_blog_article .article_header {
+  position: relative;
+  margin-bottom: 15px;
+}
+.my_blog_article .article_header hr {
+  margin: 4px 0px 0px 0px;
+  border: none;
+  border-top: 1px solid #BBBBBB;
+}
+.my_blog_article .article_header .actions {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  text-align: right;
+}
+.my_blog_article .article_header .edit,
+.my_blog_article .article_header .delete {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #999999;
+}
+.my_blog_article .article_header .edit:before,
+.my_blog_article .article_header .delete:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icons.png);
+  background-repeat: no-repeat;
+}
+.my_blog_article .article_header .edit:hover,
+.my_blog_article .article_header .delete:hover {
+  color: #64b352;
+}
+.my_blog_article .article_header .edit {
+  margin-right: 15px;
+}
+.my_blog_article .article_header .edit:before {
+  width: 21px;
+  height: 20px;
+  margin: 0px 6px -3px 0px;
+  background-position: -20px -44px;
+}
+.my_blog_article .article_header .edit:hover:before {
+  background-position: -20px -66px;
+}
+.my_blog_article .article_header .delete:before {
+  width: 17px;
+  height: 21px;
+  margin: 0px 6px -3px 0px;
+  background-position: -42px -44px;
+}
+.my_blog_article .article_header .delete:hover:before {
+  background-position: -42px -66px;
+}
+.my_blog_article .title {
+  width: 780px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  line-height: 1.2em;
+  text-decoration: underline;
+  color: #64b352;
+}
+.my_blog_article .datetime {
+  display: inline-block;
+  width: 300px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #999999;
+  background: url(../img/date_icon.png) 0px 0px no-repeat;
+}
+.my_blog_article .video_block {
+  width: 487px;
+  height: 321px;
+  margin: 0px auto 15px auto;
+}
+.my_blog_article .video_block img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.my_blog_article h3 {
+  padding-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.2em;
+}
+.my_blog_article ul,
+.my_blog_article ol {
+  margin-bottom: 15px;
+}
+.my_blog_article .note {
+  padding-left: 22px;
+  font-style: italic;
+  color: #777777;
+}
+.my_blog_article .tags_list {
+  padding: 10px 0px;
+}
+.my_blog_article .tags_list .tags_caption {
+  color: #999999;
+}
+/* add blog article styles */
+.blog_article_form .inputs {
+  width: 974px;
+  height: 26px;
+  margin-bottom: 15px;
+  border: 2px solid #EEEEEE;
+}
+.blog_article_form .inputs:focus {
+  border-color: #64B352;
+}
+.blog_article_form .tags_select {
+  width: 744px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+.blog_article_form .textareas {
+  width: 974px;
+  height: 399px;
+  padding: 10px;
+  border: 2px solid #EEEEEE;
+}
+.blog_article_form .textareas:focus {
+  border-color: #64B352;
+}
+.blog_article_form .buttons {
+  display: block;
+  width: 168px;
+  margin: 22px auto 0px auto;
+}
+/* blog styles */
+.my_blog .articles {
+  float: left;
+  width: 730px;
+  padding-bottom: 30px;
+}
+.my_blog .article {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #BBBBBB;
+}
+.my_blog .article:first-child {
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: none;
+}
+.my_blog .title {
+  font-weight: bold;
+  text-decoration: none;
+  color: #777777;
+}
+.my_blog .title:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.my_blog .datetime {
+  display: inline-block;
+  width: 300px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #999999;
+  background: url(../img/date_icon.png) 0px 0px no-repeat;
+  display: block;
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.my_blog .read_more {
+  font-weight: bold;
+  text-decoration: none;
+  color: #777777;
+}
+.my_blog .read_more:hover {
+  text-decoration: underline;
+  color: #64b352;
+}
+.my_blog .archive_column {
+  float: right;
+  width: 250px;
+}
+.my_blog .add_button {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 60px;
+  margin: 0px 0px 19px 0px;
+  padding-top: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #555555;
+  background: #F0F0F0 none;
+}
+.my_blog .add_button:before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: 0px 10px -4px 0px;
+  background: url(../img/icons.png) 0px 0px no-repeat;
+}
+.my_blog .add_button:hover {
+  color: #64b352;
+  background: #E8F4E5 none;
+}
+.my_blog .add_button:hover:before {
+  background-position: 0px -22px;
+}
+.my_blog .archive .caption {
+  padding-bottom: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #64b352;
+  border-bottom: 1px solid #BBBBBB;
+}
+.my_blog .year_block {
+  padding-top: 14px;
+}
+.my_blog .year_block .year {
+  font-weight: bold;
+  text-decoration: none !important;
+  color: #555555;
+}
+.my_blog .year_block .year:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 8px;
+  margin: 0px 8px 1px 3px;
+  background: url(../img/icons.png) -124px -69px no-repeat;
+}
+.my_blog .year_block .year:hover {
+  color: #64b352;
+}
+.my_blog .year_block .year:hover:before {
+  width: 5px;
+  height: 8px;
+  margin: 0px 8px 1px 3px;
+  background: url(../img/icons.png) -124px -78px no-repeat;
+}
+.my_blog .year_block .months {
+  list-style: none;
+  margin: 6px 0px 0px 0px;
+  padding: 0px;
+}
+.my_blog .year_block li {
+  padding: 3px 0px 3px 14px;
+}
+.my_blog .year_block .current a {
+  color: #64b352;
+  text-decoration: none;
+}
+.my_blog .year_block a {
+  text-decoration: none;
+  color: #555555;
+}
+.my_blog .year_block a:hover {
+  text-decoration: underline;
+  color: #64b352 !important;
+}
+.my_blog .year_block .counter {
+  color: #999999;
+}
+.my_blog .opened .year {
+  color: #64b352;
+}
+.my_blog .opened .year:before,
+.my_blog .opened .year:hover:before {
+  width: 9px;
+  height: 6px;
+  margin: 0px 7px 2px 0px;
+  background: url(../img/icons.png) -123px -62px no-repeat;
+}
+.my_blog .opened .months {
+  display: block !important;
+}

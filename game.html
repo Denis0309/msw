@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>msw</title>
+    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/games.css" />
+    <!--
+    <link type="text/less" rel="stylesheet" href="css/colors.less" />
+    <link type="text/less" rel="stylesheet" href="css/helpers.less" />
+    <link type="text/less" rel="stylesheet" href="css/base.less" />
+    <link type="text/less" rel="stylesheet" href="css/auth.less" />
+    <link type="text/less" rel="stylesheet" href="css/carousel.less" />
+    <link type="text/less" rel="stylesheet" href="css/games.less" />
+    -->
+    
+    <link rel="stylesheet" href="css/small_screen.css" media="screen and (max-width: 1269px)" />
+    <!--
+    <link rel="stylesheet" href="css/small_screen.less" media="screen and (max-width: 1269px)" />
+    -->
+    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/less.min.js"></script>
+    <script src="js/jquery.ezmark.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript">
+	  $(document).ready(function() {
+        $('.poll_block .radios').ezMark();
+        $('.customize_menu .checkboxes').ezMark();
+	  });
+    </script>
+    <script type="text/javascript">
+	  $(document).ready(function() {
+        jQuery('#partners_carousel').jcarousel({
+		  vertical: false,
+		  scroll: 1,
+          wrap: "circular"
+		});
+	  });
+    </script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header class="header">
+        
+        <div class="top_row">
+          <div class="header_image">
+            <a href="#" title=""><img src="img/header_image.jpg" alt="" title="" /></a>
+          </div>
+        </div>
+        
+        <div class="middle_row">
+          <div class="centered">
+            
+            <div class="logo">
+              <a href="index.html" title=""></a>
+            </div>
+            
+            <nav class="navigation">
+              <ul>
+                <li>
+                  <a href="#" title="">STORE</a>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">USA</a>
+                  <div class="subnav">
+                    <a href="#" title="">MLS</a>
+                    <a href="#" title="">Men's National Team</a>
+                    <a href="#" title="">Woman's National Team</a>
+                    <a href="#" title="">Americans Abroad</a>
+                    <a href="#" title="">USL</a>
+                    <a href="#" title="">NCAA</a>
+                    <a href="#" title="">WPL</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">ENGLAND</a>
+                  <div class="subnav">
+                    <a href="#" title="">News</a>
+                    <a href="#" title="">Tables</a>
+                    <a href="#" title="">Statistics</a>
+                    <a href="#" title="">National Team</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">UEFA CHAMPIONS</a>
+                  <div class="subnav">
+                    <a href="#" title="">Fixtures</a>
+                    <a href="#" title="">Standings</a>
+                    <a href="#" title="">News</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">WORLD CUP</a>
+                  <div class="subnav">
+                    <a href="#" title="">Qualifying S. Africa</a>
+                    <a href="#" title="">Past Cups</a>
+                    <a href="#" title="">World Cup Home</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">EUROPE</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">UEFA</a>
+                    <a href="#" title="">CUP</a>
+                    <a href="#" title="">Spain</a>
+                    <a href="#" title="">Italy</a>
+                    <a href="#" title="">Germany</a>
+                    <a href="#" title="">France</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">WORLD</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">South America</a>
+                    <a href="#" title="">Mexico</a>
+                    <a href="#" title="">Africa</a>
+                    <a href="#" title="">Asia</a>
+                    <a href="#" title="">Australia</a>
+                    <a href="#" title="">Copa Libertadores</a>
+                    <a href="#" title="">Copa America</a>
+                    <a href="#" title="">Gold Cup</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">SCORES</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">USA</a>
+                    <a href="#" title="">England</a>
+                    <a href="#" title="">World</a>
+                    <a href="#" title="">Europe</a>
+                    <a href="#" title="">CL</a>
+                    <a href="#" title="">Fixtures</a>
+                    <a href="#" title="">Live Updates</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" title="">VIDEOS</a>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">COMMUNITY</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">Blogs</a>
+                    <a href="#" title="">Forum</a>
+                    <a href="#" title="">Twitter</a>
+                    <a href="#" title="">Facebook</a>
+                    <a href="#" title="">Edit</a>
+                    <a href="#" title="">Profile</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            
+            <a href="javascript:void(0);" title="" class="search_icon"></a>
+            <div class="quick_search">
+              <form name="" id="" action="" method="">
+                <input type="text" name="" id="" value="" class="inputs search_field" />
+                <input type="submit" name="" id="" value="" class="search_button" />
+              </form>
+            </div>
+            
+            <div class="clear_both"></div>
+          </div>
+        </div>
+        
+        <div class="bottom_row hidden_row"></div>
+        
+      </header>
+      
+      <!-- content-->
+      <div class="content_block">
+        
+        <aside class="left_column">
+          
+          <!-- Usermenu -->
+          <div class="tiles user_menu">
+            <div class="caption_block">
+              <div class="caption">Profile</div>
+              <a href="#" title="" class="auth_link">Logout</a>
+            </div>
+            
+            <div class="body_block">
+              <div class="logined_block">
+                <a href="#" title="" class="avatar"><img src="img/user_avatar.png" alt="" title="" /></a>
+                <a href="#" title="" class="username">ADMIN ADMINKOV</a>
+                
+                <a href="#" title="" class="add_article_button buttons">Add Article</a>
+                
+                <div class="user_nav">
+                  <a href="my_articles.html" title="" class="links articles">Articles</a>
+                  <a href="my_photo_albums.html" title="" class="links photos">Photos</a>
+                  <a href="my_video_albums.html" title="" class="links videos">Videos</a>
+                  <a href="#" title="" class="links chat">Chat</a>
+                  <a href="forums.html" title="" class="links forum">Forum</a>
+                  <a href="my_clubs.html" title="" class="links clubs">Clubs</a>
+                  <a href="profile_edit.html" title="" class="links edit_profile">Edit profile</a>
+                  <a href="my_blog.html" title="" class="links blog">Blog</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          
+          <!-- Poll -->
+          <div class="tiles poll_block">
+            <div class="caption_block">
+              <div class="caption">polls</div>
+            </div>
+            
+            <div class="body_block">
+              <div class="question">
+                Who’s the superior partnership?
+              </div>
+              <div class="answers">
+                <form name="" id="" action="" method="">
+                  <label for="answer_01" class="answer">
+                    <input type="radio" name="poll_answer" id="answer_01" value="" class="radios" />
+                    <span class="labels">Drogba – Anelka</span>
+                  </label>
+                  
+                  <label for="answer_02" class="answer">
+                    <input type="radio" name="poll_answer" id="answer_02" value="" class="radios" />
+                    <span class="labels">Rooney – Berbatov</span>
+                  </label>
+                  
+                  <label for="answer_03" class="answer">
+                    <input type="radio" name="poll_answer" id="answer_03" value="" class="radios" />
+                    <span class="labels">Bent – Jones</span>
+                  </label>
+                  
+                  <input type="submit" name="" id="" value="Vote" class="poll_submit" />
+                </form>
+              </div>
+              <div class="bottom_links">
+                <a href="#" title="" class="results">Results</a>
+                <a href="#" title="" class="other_polls">Other polls</a>
+                <div class="clear_both"></div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          
+        </aside>
+        
+        <div class="main_column">
+          <div class="content game_page">
+            <h1 class="page_title">
+              GAMES
+              <span class="bread_crumbs">&rsaquo; INTERNATIONAL CHAMPIONS CUP, 22/7/2015 6:00*, ROSE BOWL</span>
+              <span class="notice">* Local time based on your geographic location.</span>
+            </h1>
+            
+            <div class="game_block">
+              <div class="game_main">
+                <table class="game_info">
+                  <tr>
+                    <td class="team_name first_team">
+                      <a href="#" title="">BARCELONA</a>
+                    </td>
+                    <td class="team_logo first_team">
+                      <a href="#" title=""><img src="img/team_logo_01.png" alt="" title="" /></a>
+                    </td>
+                    <td class="game_score">
+                      2-1
+                    </td>
+                    <td class="team_logo second_team">
+                      <a href="#" title=""><img src="img/team_logo_02.png" alt="" title="" /></a>
+                    </td>
+                    <td class="team_name second_team">
+                      <a href="#" title="">CHELSEA</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="goals first_team">
+                      <span>Sergi Roberto 56’</span>, <span>Luis Suárez 45’</span>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td class="central_text">
+                      FT
+                    </td>
+                    <td>&nbsp;</td>
+                    <td class="goals second_team">
+                      <span>Sergi Roberto 56’</span>
+                    </td>
+                  </tr>
+                </table>
+                
+                <table class="game_results">
+                  <tr>
+                    <td colspan="3">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="value first_team">
+                      20(6)
+                    </td>
+                    <td class="label">
+                      SHOTS (ON GOAL)
+                    </td>
+                    <td class="value second_team">
+                      8(6)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="value first_team">
+                      20
+                    </td>
+                    <td class="label">
+                      TACKLES
+                    </td>
+                    <td class="value second_team">
+                      14
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="value first_team">
+                      6
+                    </td>
+                    <td class="label">
+                      FOULS
+                    </td>
+                    <td class="value second_team">
+                      7
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="value first_team">
+                      65
+                    </td>
+                    <td class="label">
+                      POSSESSION
+                    </td>
+                    <td class="value second_team">
+                      35
+                    </td>
+                  </tr>
+                </table>
+                
+                <div class="socials">
+                  <a href="#" title="" class="fb_like"></a>
+                  <a href="#" title="" class="google_like"></a>
+                </div>
+              </div>
+              
+              <div class="game_tables">
+                <div class="main_column">
+                  <div class="team_tables">
+                    <div class="caption">BARCELONA</div>
+                    
+                    <div class="subcaption">LINE-UP</div>
+                    <table class="team_table">
+                      <tr class="caption_row">
+                        <td class="pos_col">
+                          POS
+                        </td>
+                        <td class="no_col">
+                          No
+                        </td>
+                        <td class="name_col">
+                          Name
+                        </td>
+                        <td class="sh_col">
+                          SH
+                        </td>
+                        <td class="sg_col">
+                          SG
+                        </td>
+                        <td class="g_col">
+                          G
+                        </td>
+                        <td class="a_col">
+                          A
+                        </td>
+                        <td class="of_col">
+                          OF
+                        </td>
+                        <td class="fd_col">
+                          FD
+                        </td>
+                        <td class="fc_col">
+                          FC
+                        </td>
+                        <td class="sv_col">
+                          SV
+                        </td>
+                        <td class="yc_col">
+                          YC
+                        </td>
+                        <td class="rc_col">
+                          RC
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          G
+                        </td>
+                        <td class="no_col">
+                          1
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_01.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          21
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_02.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          13
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_03.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          F
+                        </td>
+                        <td class="no_col">
+                          6
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_04.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                    </table>
+                    
+                    <div class="subcaption">SUBSTITUTES</div>
+                    <table class="team_table">
+                      <tr class="caption_row">
+                        <td class="pos_col">
+                          POS
+                        </td>
+                        <td class="no_col">
+                          No
+                        </td>
+                        <td class="name_col">
+                          Name
+                        </td>
+                        <td class="sh_col">
+                          SH
+                        </td>
+                        <td class="sg_col">
+                          SG
+                        </td>
+                        <td class="g_col">
+                          G
+                        </td>
+                        <td class="a_col">
+                          A
+                        </td>
+                        <td class="of_col">
+                          OF
+                        </td>
+                        <td class="fd_col">
+                          FD
+                        </td>
+                        <td class="fc_col">
+                          FC
+                        </td>
+                        <td class="sv_col">
+                          SV
+                        </td>
+                        <td class="yc_col">
+                          YC
+                        </td>
+                        <td class="rc_col">
+                          RC
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          G
+                        </td>
+                        <td class="no_col">
+                          1
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_05.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          21
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_06.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          13
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_07.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          F
+                        </td>
+                        <td class="no_col">
+                          6
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_08.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          F
+                        </td>
+                        <td class="no_col">
+                          6
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_09.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  
+                  <div class="team_tables">
+                    <div class="caption">CHELSEA</div>
+                    
+                    <div class="subcaption">LINE-UP</div>
+                    <table class="team_table">
+                      <tr class="caption_row">
+                        <td class="pos_col">
+                          POS
+                        </td>
+                        <td class="no_col">
+                          No
+                        </td>
+                        <td class="name_col">
+                          Name
+                        </td>
+                        <td class="sh_col">
+                          SH
+                        </td>
+                        <td class="sg_col">
+                          SG
+                        </td>
+                        <td class="g_col">
+                          G
+                        </td>
+                        <td class="a_col">
+                          A
+                        </td>
+                        <td class="of_col">
+                          OF
+                        </td>
+                        <td class="fd_col">
+                          FD
+                        </td>
+                        <td class="fc_col">
+                          FC
+                        </td>
+                        <td class="sv_col">
+                          SV
+                        </td>
+                        <td class="yc_col">
+                          YC
+                        </td>
+                        <td class="rc_col">
+                          RC
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          G
+                        </td>
+                        <td class="no_col">
+                          1
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_01.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          21
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_02.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          13
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_03.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          F
+                        </td>
+                        <td class="no_col">
+                          6
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_04.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                    </table>
+                    
+                    <div class="subcaption">SUBSTITUTES</div>
+                    <table class="team_table">
+                      <tr class="caption_row">
+                        <td class="pos_col">
+                          POS
+                        </td>
+                        <td class="no_col">
+                          No
+                        </td>
+                        <td class="name_col">
+                          Name
+                        </td>
+                        <td class="sh_col">
+                          SH
+                        </td>
+                        <td class="sg_col">
+                          SG
+                        </td>
+                        <td class="g_col">
+                          G
+                        </td>
+                        <td class="a_col">
+                          A
+                        </td>
+                        <td class="of_col">
+                          OF
+                        </td>
+                        <td class="fd_col">
+                          FD
+                        </td>
+                        <td class="fc_col">
+                          FC
+                        </td>
+                        <td class="sv_col">
+                          SV
+                        </td>
+                        <td class="yc_col">
+                          YC
+                        </td>
+                        <td class="rc_col">
+                          RC
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          G
+                        </td>
+                        <td class="no_col">
+                          1
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_05.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          21
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_06.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          D
+                        </td>
+                        <td class="no_col">
+                          13
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_07.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr class="dark_row">
+                        <td class="pos_col">
+                          F
+                        </td>
+                        <td class="no_col">
+                          6
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_08.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="pos_col">
+                          F
+                        </td>
+                        <td class="no_col">
+                          6
+                        </td>
+                        <td class="name_col">
+                          Jordi Masip
+                          <img src="img/t_tables_icon_09.png" alt="" title="" />
+                        </td>
+                        <td class="sh_col">
+                          6
+                        </td>
+                        <td class="sg_col">
+                          5
+                        </td>
+                        <td class="g_col">
+                          1
+                        </td>
+                        <td class="a_col">
+                          -
+                        </td>
+                        <td class="of_col">
+                          -
+                        </td>
+                        <td class="fd_col">
+                          -
+                        </td>
+                        <td class="fc_col">
+                          -
+                        </td>
+                        <td class="sv_col">
+                          -
+                        </td>
+                        <td class="yc_col">
+                          -
+                        </td>
+                        <td class="rc_col">
+                          -
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  
+                  <section class="comments">
+                    <!-- !!!DO NOT USE THIS CODE!!! -->
+                    <img src="img/faceboock_comments.png" alt=-"" title="" />
+                    <style type="text/css">
+                      .comments img {
+                        width: 100%;
+                      }
+                    </style>
+                    <!-- end -->
+                  </section>
+                </div>
+                
+                <aside class="game_narrow">
+                  <div class="scorring_block">
+                    <div class="caption">SCORING SUMMARY</div>
+                    <table class="scoring_table">
+                      <tr class="caption_row">
+                        <td class="first_team">
+                          Barcelona
+                        </td>
+                        <td class="second_team">
+                          Chelsea
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="first_team">
+                          Luis Suárez (45’)<br />
+                          Sergi Roberto (56’)
+                        </td>
+                        <td class="second_team">
+                          Luis Suárez (45’)
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  
+                  <div class="match_block">
+                    <div class="caption">SCORING SUMMARY</div>
+                    <table class="match_table">
+                      <tr class="caption_row">
+                        <td colspan="3">
+                          <table>
+                            <tr>
+                              <td>
+                                Barcelona
+                              </td>
+                              <td>
+                                Chelsea
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          20(6)
+                        </td>
+                        <td class="label">
+                          Shots (on goal)
+                        </td>
+                        <td class="value second_team">
+                          6(2)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          6
+                        </td>
+                        <td class="label">
+                          Fouls
+                        </td>
+                        <td class="value second_team">
+                          13
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          8
+                        </td>
+                        <td class="label">
+                          Corner kicks
+                        </td>
+                        <td class="value second_team">
+                          1
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          4
+                        </td>
+                        <td class="label">
+                          Offsides
+                        </td>
+                        <td class="value second_team">
+                          2
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          73%
+                        </td>
+                        <td class="label">
+                          Time of Possession
+                        </td>
+                        <td class="value second_team">
+                          27%
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          0
+                        </td>
+                        <td class="label">
+                          Yellow Cards
+                        </td>
+                        <td class="value second_team">
+                          1
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          0
+                        </td>
+                        <td class="label">
+                          Red Cards
+                        </td>
+                        <td class="value second_team">
+                          0
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="value first_team">
+                          1
+                        </td>
+                        <td class="label">
+                          Saves
+                        </td>
+                        <td class="value second_team">
+                          4
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </aside>
+                <div class="clear_both"></div>
+              </div>
+            </div>
+          </div>
+          
+          <br />
+          <!-- Partners tile -->
+          <section class="tiles wide_tiles partners_tile">
+            <div class="caption_block">
+              <div class="caption">Partners</div>
+            </div>
+            
+            <div class="body_block">
+              <div class="partners_block">
+                <ul id="partners_carousel" class="jcarousel jcarousel-skin-tango">
+                  <li>
+                    <div class="partners">
+                      <a href="#" title="" class="partner"><img src="img/partner_logo_01.png" alt="" title="" /></a>
+                      <a href="#" title="" class="partner"><img src="img/partner_logo_02.png" alt="" title="" /></a>
+                      <a href="#" title="" class="partner"><img src="img/partner_logo_03.png" alt="" title="" /></a>
+                      <a href="#" title="" class="partner"><img src="img/partner_logo_04.png" alt="" title="" /></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- end -->
+          
+        </div>
+        
+        <div class="clear_both"></div>
+      </div>
+      
+    </div>
+    
+    <!-- footer -->
+    <footer>
+      <div class="centered">
+        
+        <div class="copyright">
+          © 2014 My Soccer Buzz. All rights reserved
+        </div>
+        
+        <div class="footer_nav">
+          <a href="#" title="">Home</a>
+          <a href="#" title="">About</a>
+          <a href="#" title="">Video</a>
+          <a href="#" title="">Facebook</a>
+          <a href="#" title="">Twitter</a>
+        </div>
+        
+        <a href="#" title="" class="designed_by"><img src="img/fresh_logo.png" alt="" title="" /></a>
+        <div class="clear_both"></div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

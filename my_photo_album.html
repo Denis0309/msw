@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>msw</title>
+    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/comments.css" />
+    <link rel="stylesheet" href="css/albums.css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" />
+    <!--
+    <link type="text/less" rel="stylesheet" href="css/colors.less" />
+    <link type="text/less" rel="stylesheet" href="css/helpers.less" />
+    <link type="text/less" rel="stylesheet" href="css/base.less" />
+    <link type="text/less" rel="stylesheet" href="css/auth.less" />
+    <link type="text/less" rel="stylesheet" href="css/comments.less" />
+    <link type="text/less" rel="stylesheet" href="css/albums.less" />
+    -->
+    
+    <link rel="stylesheet" href="css/small_screen.css" media="screen and (max-width: 1269px)" />
+    <!--
+    <link rel="stylesheet" href="css/small_screen.less" media="screen and (max-width: 1269px)" />
+    -->
+    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/less.min.js"></script>
+    <script src="js/jquery.ezmark.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="fancybox/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript">
+	  $(document).ready(function() {
+        $('.poll_block .radios').ezMark();
+        $('.customize_menu .checkboxes').ezMark();
+	  });
+    </script>
+    <script type="text/javascript">
+	  jQuery(function(){
+        $(".photo_block a.photo").fancybox({
+          'transitionIn' : 'fade',
+          'transitionOut' : 'fade',
+          'titleShow' : false,
+          'showCloseButton' : true,
+          'hideOnOverlayClick' : false,
+          'hideOnContentClick' : false,
+          'overlayShow' : true,
+          'padding' : 0,
+          'overlayColor' : '#333333',
+          'overlayOpacity' : '0.45',
+          'centerOnScroll' : false,
+          'showNavArrows' : false,
+          helpers: {
+            overlay: {
+              locked: false
+            }
+          },
+          onStart: function() {
+            $(".wrapper").css({'overflow-y': 'hidden', 'position': 'fixed', 'top': '0px', 'width': '100%'});
+          },
+          onClosed: function() {
+            $(".wrapper").css({'overflow-y': 'auto', 'position': 'relative'});
+          }
+        });
+	  });
+    </script>
+    <script type="text/javascript">
+	  jQuery(function(){
+		  $(".photo_block .edit_link").fancybox({
+			  'transitionIn' : 'fade',
+			  'transitionOut' : 'fade',
+			  'titleShow' : false,
+			  'showCloseButton' : true,
+			  'hideOnOverlayClick' : false,
+			  'hideOnContentClick' : false,
+			  'overlayShow' : true,
+			  'padding' : 0,
+			  'overlayColor' : '#333333',
+			  'overlayOpacity' : '0.45',
+			  'centerOnScroll' : false,
+			  'showNavArrows' : false
+          });
+	  });
+    </script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header class="header">
+        
+        <div class="top_row">
+          <div class="header_image">
+            <a href="#" title=""><img src="img/header_image.jpg" alt="" title="" /></a>
+          </div>
+        </div>
+        
+        <div class="middle_row">
+          <div class="centered">
+            
+            <div class="logo">
+              <a href="index.html" title=""></a>
+            </div>
+            
+            <nav class="navigation">
+              <ul>
+                <li>
+                  <a href="#" title="">STORE</a>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">USA</a>
+                  <div class="subnav">
+                    <a href="#" title="">MLS</a>
+                    <a href="#" title="">Men's National Team</a>
+                    <a href="#" title="">Woman's National Team</a>
+                    <a href="#" title="">Americans Abroad</a>
+                    <a href="#" title="">USL</a>
+                    <a href="#" title="">NCAA</a>
+                    <a href="#" title="">WPL</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">ENGLAND</a>
+                  <div class="subnav">
+                    <a href="#" title="">News</a>
+                    <a href="#" title="">Tables</a>
+                    <a href="#" title="">Statistics</a>
+                    <a href="#" title="">National Team</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">UEFA CHAMPIONS</a>
+                  <div class="subnav">
+                    <a href="#" title="">Fixtures</a>
+                    <a href="#" title="">Standings</a>
+                    <a href="#" title="">News</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">WORLD CUP</a>
+                  <div class="subnav">
+                    <a href="#" title="">Qualifying S. Africa</a>
+                    <a href="#" title="">Past Cups</a>
+                    <a href="#" title="">World Cup Home</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">EUROPE</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">UEFA</a>
+                    <a href="#" title="">CUP</a>
+                    <a href="#" title="">Spain</a>
+                    <a href="#" title="">Italy</a>
+                    <a href="#" title="">Germany</a>
+                    <a href="#" title="">France</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">WORLD</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">South America</a>
+                    <a href="#" title="">Mexico</a>
+                    <a href="#" title="">Africa</a>
+                    <a href="#" title="">Asia</a>
+                    <a href="#" title="">Australia</a>
+                    <a href="#" title="">Copa Libertadores</a>
+                    <a href="#" title="">Copa America</a>
+                    <a href="#" title="">Gold Cup</a>
+                  </div>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">SCORES</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">USA</a>
+                    <a href="#" title="">England</a>
+                    <a href="#" title="">World</a>
+                    <a href="#" title="">Europe</a>
+                    <a href="#" title="">CL</a>
+                    <a href="#" title="">Fixtures</a>
+                    <a href="#" title="">Live Updates</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" title="">VIDEOS</a>
+                </li>
+                <li class="parent">
+                  <a href="#" title="">COMMUNITY</a>
+                  <div class="subnav right_sided">
+                    <a href="#" title="">Blogs</a>
+                    <a href="#" title="">Forum</a>
+                    <a href="#" title="">Twitter</a>
+                    <a href="#" title="">Facebook</a>
+                    <a href="#" title="">Edit</a>
+                    <a href="#" title="">Profile</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            
+            <a href="javascript:void(0);" title="" class="search_icon"></a>
+            <div class="quick_search">
+              <form name="" id="" action="" method="">
+                <input type="text" name="" id="" value="" class="inputs search_field" />
+                <input type="submit" name="" id="" value="" class="search_button" />
+              </form>
+            </div>
+            
+            <div class="clear_both"></div>
+          </div>
+        </div>
+        
+        <div class="bottom_row hidden_row"></div>
+        
+      </header>
+      
+      <!-- content-->
+      <div class="content_block">
+        
+        <aside class="left_column">
+          
+          <!-- Usermenu -->
+          <div class="tiles user_menu">
+            <div class="caption_block">
+              <div class="caption">Profile</div>
+              <a href="#" title="" class="auth_link">Logout</a>
+            </div>
+            
+            <div class="body_block">
+              <div class="logined_block">
+                <a href="#" title="" class="avatar"><img src="img/user_avatar.png" alt="" title="" /></a>
+                <a href="#" title="" class="username">ADMIN ADMINKOV</a>
+                
+                <a href="#" title="" class="add_article_button buttons">Add Article</a>
+                
+                <div class="user_nav">
+                  <a href="my_articles.html" title="" class="links articles">Articles</a>
+                  <a href="my_photo_albums.html" title="" class="links photos current">Photos</a>
+                  <a href="my_video_albums.html" title="" class="links videos">Videos</a>
+                  <a href="#" title="" class="links chat">Chat</a>
+                  <a href="forums.html" title="" class="links forum">Forum</a>
+                  <a href="my_clubs.html" title="" class="links clubs">Clubs</a>
+                  <a href="profile_edit.html" title="" class="links edit_profile">Edit profile</a>
+                  <a href="my_blog.html" title="" class="links blog">Blog</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          
+          <!-- Poll -->
+          <div class="tiles poll_block">
+            <div class="caption_block">
+              <div class="caption">polls</div>
+            </div>
+            
+            <div class="body_block">
+              <div class="question">
+                Who’s the superior partnership?
+              </div>
+              <div class="answers">
+                <form name="" id="" action="" method="">
+                  <label for="answer_01" class="answer">
+                    <input type="radio" name="poll_answer" id="answer_01" value="" class="radios" />
+                    <span class="labels">Drogba – Anelka</span>
+                  </label>
+                  
+                  <label for="answer_02" class="answer">
+                    <input type="radio" name="poll_answer" id="answer_02" value="" class="radios" />
+                    <span class="labels">Rooney – Berbatov</span>
+                  </label>
+                  
+                  <label for="answer_03" class="answer">
+                    <input type="radio" name="poll_answer" id="answer_03" value="" class="radios" />
+                    <span class="labels">Bent – Jones</span>
+                  </label>
+                  
+                  <input type="submit" name="" id="" value="Vote" class="poll_submit" />
+                </form>
+              </div>
+              <div class="bottom_links">
+                <a href="#" title="" class="results">Results</a>
+                <a href="#" title="" class="other_polls">Other polls</a>
+                <div class="clear_both"></div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          
+        </aside>
+        
+        <div class="main_column">
+          <div class="content">
+            <h1 class="page_title">MY PHOTOS
+              <span class="bread_crumbs">&rsaquo; NEW ALBUM #1</span>
+              <a href="#" title="" class="edit_album_link">Edit Album</a>
+            </h1>
+            
+            <div class="my_photo_album">
+              <div class="add_photo_block">
+                <form name="" id="" action="" method="">
+                  <div class="upload_photo">
+                    Add photo
+                    <input type="file" name="" id="" value="ADD PHOTO" class="upload_field" multiple />
+                  </div>
+                </form>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#edit_photo" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="photo_block">
+                <a href="#photo" title="" class="photo">
+                  <img src="img/album_thumb.png" alt="" title="" class="thumb">
+                  
+                  <span class="top_gradient"></span>
+                </a>
+                
+                <span class="actions">
+                  <a href="#" tile="" class="edit_link"></a>
+                  <a href="#" tile="" class="remove_link"></a>
+                </span>
+              </div>
+              
+              <div class="clear_both"></div>
+            </div>
+            
+            <div class="pagination">
+              <a href="#" title="">1</a>
+              <a href="#" title="" class="current">2</a>
+              <a href="#" title="">3</a>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="clear_both"></div>
+      </div>
+      
+    </div>
+    
+    <!-- footer -->
+    <footer>
+      <div class="centered">
+        
+        <div class="copyright">
+          © 2014 My Soccer Buzz. All rights reserved
+        </div>
+        
+        <div class="footer_nav">
+          <a href="#" title="">Home</a>
+          <a href="#" title="">About</a>
+          <a href="#" title="">Video</a>
+          <a href="#" title="">Facebook</a>
+          <a href="#" title="">Twitter</a>
+        </div>
+        
+        <a href="#" title="" class="designed_by"><img src="img/fresh_logo.png" alt="" title="" /></a>
+        <div class="clear_both"></div>
+      </div>
+    </footer>
+    
+    <!-- photo popup -->
+    <div class="fancy_popup_block">
+      <div id="photo" class="photo_popup fancy_popup">
+        <div class="popup_caption">
+          NEW ALBUM #1 <span class="counter">(Photo 3 of 15)</span>
+          <a href="javascript:$.fancybox.close();" title="" class="close_button"></a>
+        </div>
+        
+        <div class="popup_content">
+          <div class="navigation">
+            <a href="#" title="" class="prev"></a>
+            <a href="#" title="" class="next"></a>
+          </div>
+          
+          <div class="photo_container">
+            <a href="#" title="" alt="" class="remove_link">Delete</a>
+            <img src="img/photo.jpg" alt="" title="" class="photo" />
+          </div>
+          
+          <div class="photo_info">
+            <div class="description">
+              Arsenal: Per Mertesacker attitude can’t be faulted - Arsene Wenger. Arsenal: 
+              Per Mertesacker attitude can’t be faulted - Arsene Wenger
+            </div>
+
+            <div class="info">
+              <div class="info_table">
+                <p class="info_row">
+                  <span class="label">Author:</span>
+                  <span class="value"><b>ADMIN ADMINKOV</b></span>
+                </p>
+                <p class="info_row">
+                  <span class="label">Album:</span>
+                  <span class="value">New album #1</span>
+                </p>
+                <p class="info_row">
+                  <span class="label">Created:</span>
+                  <span class="value">October 30, 2014</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="comments_block">
+            <div class="caption">COMMENTS</div>
+            <div class="comments">
+              <div class="comment">
+                <a href="#" title="" class="avatar"><img src="img/avatar_01.png" alt="" title="" /></a>
+                <div class="body">
+                  <a href="#" title="" class="username">Rio Too</a>
+                  <span class="datetime">Oct 14, 2014; 08:15 pm</span>
+                  <div class="message">
+                    Arsene Wenger has backed the attitude of Arsenal defender Per Mertesacker, who admitted lacking 
+                    motivation after winning the World Cup with Germany. Mertesacker said “there is something missing” 
+                    from his recent performances.
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+                <div class="actions_row">
+                  <a href="#" title="">Reply</a>
+                  <a href="#" title="">Delete</a>
+                </div>
+
+                <div class="comment">
+                  <a href="#" title="" class="avatar"><img src="img/avatar_02.png" alt="" title="" /></a>
+                  <div class="body">
+                    <a href="#" title="" class="username">Jamjamla</a>
+                    <span class="datetime">Oct 14, 2014; 08:15 pm</span>
+                    <div class="message">
+                      Arsene Wenger has backed the attitude of Arsenal defender Per Mertesacker, who admitted lacking 
+                    motivation after winning the World Cup with Germany. Mertesacker said “there is something missing” 
+                    from his recent performances.
+                    </div>
+                  </div>
+                  <div class="clear_both"></div>
+                  <div class="actions_row">
+                    <a href="#" title="">Reply</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment">
+                <a href="#" title="" class="avatar"><img src="img/avatar_01.png" alt="" title="" /></a>
+                <div class="body">
+                  <a href="#" title="" class="username">Rio Too</a>
+                  <span class="datetime">Oct 14, 2014; 08:15 pm</span>
+                  <div class="message">
+                    Arsene Wenger has backed the attitude of Arsenal defender Per Mertesacker, who admitted lacking 
+                    motivation after winning the World Cup with Germany. Mertesacker said “there is something missing” 
+                    from his recent performances.
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+                <div class="actions_row">
+                  <a href="#" title="">Reply</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="comment_form">
+              <div class="caption">Your comment</div>
+
+              <form name="" id="" action="" method="">
+                <textarea name="" id="" class="textareas" placeholder="Enter your comment"></textarea>
+                <input type="" name="" id="" value="Send" class="buttons" />
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- end -->
+    
+    <!-- edit photo popup -->
+    <div class="fancy_popup_block">
+      <div id="edit_photo" class="edit_photo_popup fancy_popup">
+        <div class="popup_caption">
+          Edit photo
+          <a href="javascript:$.fancybox.close();" title="" class="close_button"></a>
+        </div>
+        
+        <div class="popup_form_block">
+          <form name="" id="" action="" method="">
+            <div class="photo_thumb">
+              <img src="img/album_thumb.png" alt="" title="" />
+            </div>
+            <div class="fields">
+              <textarea name="" id="" placeholder="Description" class="textareas">US coach evokes spirit of ‘Bel Horizonte’
+The United States coach Bob Bradley is out to prove that history can..</textarea>
+              <div class="actions">
+                <a href="#" title="" class="delete">Delete</a>
+              </div>
+              <div class="button">
+                <input type="submit" name="" id="" value="Save" class="buttons" tabindex="11" />
+              </div>
+            </div>
+            <div class="clear_both"></div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    <!-- end -->
+    
+  </body>
+</html>
